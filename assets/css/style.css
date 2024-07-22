@@ -1,0 +1,39 @@
+body {
+    background: url(../images/homepage-background.webp) no-repeat center center/cover;
+}
+
+#homepage {
+    text-align: center;
+    background-color: rgb(22, 97, 72,0.9);
+}
+
+
+h1 {
+    font-family: "Shadows Into Light", cursive;
+    font-size: 7rem;
+    color: #fafafa;
+}
+
+#intro-button {
+    font-family: "Kaushan Script", cursive;
+}
+
+#intro {
+    font-size: 3rem;
+    color: #fafafa;
+}
+
+#start-game-button {
+    height: 80px;
+    width: 200px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    background-color: #a8cccc;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 2rem;
+    font-family: "Kaushan Script", cursive;
+}
