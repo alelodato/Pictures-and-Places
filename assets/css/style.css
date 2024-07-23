@@ -5,6 +5,7 @@ body {
 #homepage {
     text-align: center;
     background-color: rgb(22, 97, 72,0.9);
+    width: 100%;
 }
 
 
@@ -12,10 +13,16 @@ h1 {
     font-family: "Shadows Into Light", cursive;
     font-size: 7rem;
     color: #fafafa;
+    margin-top: 50px;
+    margin-bottom: 20px;
 }
 
 #intro-button {
     font-family: "Kaushan Script", cursive;
+}
+
+#intro-text {
+    margin-bottom: 20px;
 }
 
 #intro {
