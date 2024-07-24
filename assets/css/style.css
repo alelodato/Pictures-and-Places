@@ -42,6 +42,10 @@ h1 {
     font-family: "Kaushan Script", cursive;
 }
 
+#start-button:hover {
+    cursor: pointer;
+}
+
 /* Gamepage */
 #gamepage-body {
     background-color: rgb(24 111 116);
@@ -57,6 +61,7 @@ h1 {
     display: block;
     width: 40%;
     padding: 2.5px 0.5rem;
+    border: solid #000000 1px;
     border-radius: 3rem;
     font-size: 1.5rem;
     margin: 1.5rem 0;
@@ -64,7 +69,8 @@ h1 {
 }
 
 .answer-container:hover {
-    box-shadow: #fafafa;
+    cursor: pointer;
+    background-color: #e2f0ed;
 }
 
 .score-area {
