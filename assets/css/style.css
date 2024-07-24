@@ -44,9 +44,32 @@ h1 {
 
 /* Gamepage */
 #gamepage-body {
-    background-color: rgb(22, 97, 72);
+    background-color: rgb(24 111 116);
+    font-family: "Kaushan Script", cursive;
 }
 
-li {
-    list-style-type: none;
+.question-container {
+    text-align: center;
+    font-size: 1.5rem;
 }
+
+.answer-container {
+    display: block;
+    width: 40%;
+    padding: 2.5px 0.5rem;
+    border-radius: 3rem;
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+    background-color: #1cd0b2;
+}
+
+.answer-container:hover {
+    box-shadow: #fafafa;
+}
+
+.score-area {
+    position: fixed;
+    bottom: 0;
+    font-size: 1.5rem;
+}
+

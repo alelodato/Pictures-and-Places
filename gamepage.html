@@ -10,21 +10,29 @@
     <title>Pictures And Places</title>
 </head>
 <body id="gamepage-body">
-    <section id="question-answers">
-        <div id="question"></div>
-            <div id="answers">
-                <ul id="left-side-answers">
-                    <li></li>
-                    <li></li>
-                </ul>
-                <ul id="right-side-answers"></ul>
-                <li></li>
-                <li></li>
-            </div>
-    </section>
-    <section id="question-img">
-    </section>
+    <div class="container">
+        <div class="quiz-progress" id="quizProgress"></div>
+        <div class="question-container" id="questionContainer">Question</div>
+        <div class="answer-container" id="answerContainer">
+            <p id="choice-text">Answer 1</p>
+        </div>
+        <div class="answer-container" id="answerContainer">
+            <p id="choice-text">Answer 2</p>
+        </div>
+        <div class="answer-container" id="answerContainer">
+            <p id="choice-text">Answer 3</p>
+        </div>
+        <div class="answer-container" id="answerContainer">
+            <p id="choice-text">Answer 4</p>
+        </div>
+
+    <!-- Score Tracker-->
+     <div class="score-area" id="score">
+        <p class="scores">Correct Answers:</p>
+        <p class="scores">Incorrect Answers:</p>
+     </div>
 
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/questions.js"></script>
 </body>
 </html>
