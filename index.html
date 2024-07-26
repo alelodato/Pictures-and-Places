@@ -11,15 +11,27 @@
 </head>
 <body id="homepage-body">
     <section id="homepage">
-        <h1 id="title" class="hide">Pictures And Places</h1>
-    <section id="intro-button">
+        <h1 id="title">Pictures And Places</h1>
         <div id="intro-text">
-            <p id="intro" class="hide">Take a look at the pictures and guess the places! How many do you know?</p>
+            <p id="intro">Take a look at the pictures and guess the places! How many do you know?</p>
         </div>
-        <div id="game-start">
-            <a href="gamepage.html"><button id="start-button">Start Game</button></a>
+            <div id="question-container" class="hide">Question</div>
+            <div id="answer-buttons" class="hide">
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+            </div>
+        <!-- Score Tracker-->
+         <div id="score" class="hide">
+            <p class="scores">Correct Answers:</p>
+            <p class="scores">Incorrect Answers:</p>
+         </div>
+        <div id="game-start"><button id="start-button">Start Game</button>
         </div>
-      </section>    
-    </section>
+        <div id="next-button" class="hide"><button id="next">Next</button></div>
+    </section>    
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/questions.js"></script>
 </body>
 </html>

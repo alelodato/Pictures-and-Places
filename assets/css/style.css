@@ -7,6 +7,7 @@
     text-align: center;
     background-color: rgb(22, 97, 72,0.9);
     width: 100%;
+    font-family: "Kaushan Script", cursive;
 }
 
 
@@ -46,36 +47,55 @@ h1 {
     cursor: pointer;
 }
 
-/* Gamepage */
-#gamepage-body {
-    background-color: rgb(24 111 116);
+#next {
+    height: 80px;
+    width: 200px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    background-color: #a8cccc;
+    color: #000000;
+    font-size: 2rem;
     font-family: "Kaushan Script", cursive;
 }
 
-.question-container {
+#next:hover {
+    cursor: pointer;
+}
+
+#question-container {
     text-align: center;
     font-size: 1.5rem;
 }
 
-.answer-container {
+#answer-buttons button {
     display: block;
     width: 40%;
-    padding: 2.5px 0.5rem;
+    padding: 5px 0.5rem;
     border: solid #000000 1px;
     border-radius: 3rem;
-    font-size: 1.5rem;
-    margin: 1.5rem 0;
+    font-size: 2rem;
+    margin: 3rem 0;
     background-color: #1cd0b2;
+    font-family: "Kaushan Script", cursive;
 }
 
-.answer-container:hover {
+#answer-buttons button:hover {
     cursor: pointer;
     background-color: #e2f0ed;
 }
 
-.score-area {
-    position: fixed;
-    bottom: 0;
+#score {
+    position: absolute;
     font-size: 1.5rem;
 }
+
+.scores {
+    margin: 10px;
+}
+
+.hide{
+     display: none;
+}
+
+
 
