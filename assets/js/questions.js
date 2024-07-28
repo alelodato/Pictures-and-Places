@@ -8,6 +8,7 @@ const questions = [
         {text:'Lima', correct:false},
         {text:'Bogota', correct:false}
     ],
+      imageUrl: "/assets/images/sao-paulo.webp",
       info: 'São Paulo is the most populous city in South America and Brazil, and is the capital of the state of São Paulo.Is the largest urban area by population outside Asia and the most populous Portuguese-speaking city in the world.'
     },
     {
@@ -18,6 +19,7 @@ const questions = [
         {text:'Maldives', correct:false},
         {text:'Mexico', correct:true}
     ],
+      imageUrl: "/assets/images/cenote.webp",
       info: 'A cenote is a natural pit, or sinkhole, resulting when a collapse of limestone bedrock exposes groundwater. The term originated on the Yucatán Peninsula of Mexico, where the ancient Maya commonly used cenotes for water supplies, and occasionally for sacrificial offerings.'
     },
     {
