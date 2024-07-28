@@ -84,6 +84,13 @@ h1 {
     background-color: #e2f0ed;
 }
 
+#quiz-image{
+    width: 40%;
+    position: relative;
+    left: 600px;
+    bottom: 400px;
+}
+
 #info {
     background-color: #fafafa;
     height: 70%;
