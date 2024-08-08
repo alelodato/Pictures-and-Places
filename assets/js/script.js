@@ -1,5 +1,6 @@
 const questionContainer = document.getElementById('question-container');
-const answerButton = document.getElementById('answer-buttons');
+const answerButtons = document.getElementById('answer-buttons');
+const answerButton = document.getElementsByClassName('option');
 const startButton = document.getElementById("start-button");
 const title = document.getElementById('title');
 const intro = document.getElementById('intro');
@@ -18,7 +19,7 @@ function startGame() {
   title.classList.add('hide')
   intro.classList.add('hide')
   questionContainer.classList.remove('hide')
-  answerButton.classList.remove('hide')
+  answerButtons.classList.remove('hide')
   nextButton.classList.remove('hide')
   scoreTracker.classList.remove('hide')
   shuffledQuestions = questions.sort(() => Math.random() - 0.5)
@@ -33,32 +34,9 @@ function nextQuestion() {
   currentQuestionIndex++;
 }
 
-function resetAnswers() {
-  answerButton.innerHTML = "";
-
-
-}
-
-
-
- function checkAnswer() {
-  const correctAnswer = questions.correct;
-  if (answerButton === correctAnswer) {
-    answerInfo ();
-  }
-  
-
-
-}
-
-function answerInfo (question) {
-  infoContainer.classList.remove('hide');
-  infoContainer.innerText = question.info;
-}
-
 function showQuestion(questions) {
   questionContainer.innerText = questions.question
-  answerButton.innerHTML = "";
+  answerButtons.innerHTML = "";
   quizImage.innerHTML = "";
   const image = document.createElement('img');
   image.src = questions.imageUrl;
@@ -66,9 +44,37 @@ function showQuestion(questions) {
   questions.answers.forEach(answers => {
     const button = document.createElement('button');
     button.textContent = answers.text;
-    answerButton.appendChild(button);
+    answerButtons.appendChild(button);
     button.addEventListener('click', checkAnswer);
+    if (answers.correct) {
+      button.dataset.correct = answers.correct;
+  }
   })
 };
+
+function checkAnswer(event) {
+  const selectedAnswer = event.target;
+  const correct = selectedAnswer.dataset.correct;
+  answerButtons.appendChild(button);
+  if (questions.answers === correct){
+    button.style.backgroundColor = "lightgreen"
+  } else {button.style.backgroundColor = "red"};
+  answerInfo();
+}
+
+
+function resetAnswers() {
+  answerButtons.innerHTML = "";
+}
+
+function answerInfo (questions) {
+  infoContainer.classList.remove('hide');
+  infoContainer.innerHTML = "";
+}
+
+function endQuiz(){
+
+}
+
 
 

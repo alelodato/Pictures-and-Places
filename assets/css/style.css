@@ -1,6 +1,7 @@
 /* Homepage */
 #homepage-body {
     background: url(../images/homepage-background.webp) no-repeat center center/cover;
+    height: 100%;
 }
 
 #homepage {
@@ -13,7 +14,7 @@
 
 h1 {
     font-family: "Shadows Into Light", cursive;
-    font-size: 7rem;
+    font-size: 3rem;
     color: #fafafa;
     margin-top: 50px;
     margin-bottom: 20px;
@@ -28,18 +29,18 @@ h1 {
 }
 
 #intro {
-    font-size: 3rem;
+    font-size: 2rem;
     color: #fafafa;
 }
 
 #start-button {
-    height: 80px;
-    width: 200px;
+    height: 70px;
+    width: 150px;
     border-radius: 15px;
     margin-bottom: 20px;
     background-color: #a8cccc;
     color: #000000;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: "Kaushan Script", cursive;
 }
 
@@ -48,13 +49,13 @@ h1 {
 }
 
 #next {
-    height: 80px;
-    width: 200px;
+    height: 50px;
+    width: 100px;
     border-radius: 15px;
-    margin-bottom: 20px;
+    margin: 10px 10px 10px 250px;
     background-color: #a8cccc;
     color: #000000;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: "Kaushan Script", cursive;
 }
 
@@ -67,16 +68,24 @@ h1 {
     font-size: 1.5rem;
 }
 
+#answers-image {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#answer-buttons {
+    margin: 5px;
+}
+
 #answer-buttons button {
-    display: block;
-    width: 40%;
+    width: 90%;
     padding: 5px 0.5rem;
     border: solid #000000 1px;
     border-radius: 3rem;
-    font-size: 2rem;
-    margin: 3rem 0;
-    background-color: #1cd0b2;
+    font-size: 1rem;
     font-family: "Kaushan Script", cursive;
+    background-color: #1cd0b2;
+    margin: 5px;
 }
 
 #answer-buttons button:hover {
@@ -85,10 +94,11 @@ h1 {
 }
 
 #quiz-image{
-    width: 40%;
-    position: relative;
-    left: 600px;
-    bottom: 400px;
+    margin-top: 10px;
+}
+
+#quiz-image img {
+    width: 300px;
 }
 
 #info {
@@ -99,16 +109,90 @@ h1 {
 
 #score {
     position: absolute;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .scores {
-    margin: 10px;
+    margin: 3px;
 }
 
 .hide{
      display: none;
 }
 
+/*Media query for large or landscape phones (570px and up)*/
+@media screen and (min-width:570px){
+
+}
+
+/*Media query for tablets and larger (768px and up)*/
+@media screen and (min-width:768px) {
+
+}
+
+/*Media query for laptops and larger screens (992 and up)*/
+@media screen and (min-width:992px) {
+
+}
+
+/*Media query for computers,large laptops and upwards (1200px and higher)*/
+@media screen and (min-width:1200px) {
+    h1 {
+    font-size: 7rem;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    }
+
+    #intro-text {
+        margin-bottom: 20px;
+    }
+
+    #intro {
+        font-size: 3rem;
+    }
+
+    #start-button {
+        height: 80px;
+        width: 200px;
+        border-radius: 15px;
+        margin-bottom: 20px;
+        font-size: 2rem;
+    }
+
+    #next {
+        height: 80px;
+        width: 200px;
+        border-radius: 15px;
+        margin-bottom: 20px;
+        font-size: 2rem;
+    }
+
+    #question-container {
+        font-size: 1.5rem;
+    }
+
+    #answers-image {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #answer-buttons {
+        width: 45%;
+    }
+
+    #answer-buttons button {
+        width: 90%;
+        display: block;
+        padding: 5px 0.5rem;
+        border-radius: 3rem;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    #quiz-image{
+        width: 45%;
+        margin-top: 40px;
+    }
+}
 
 
