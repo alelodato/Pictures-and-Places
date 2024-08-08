@@ -124,6 +124,10 @@ h1 {
 /*Media query for large or landscape phones (570px and up)*/
 @media screen and (min-width:570px){
 
+    #next {
+        margin: 10px;
+    }
+
 }
 
 /*Media query for tablets and larger (768px and up)*/
@@ -145,7 +149,7 @@ h1 {
     }
 
     #quiz-image img {
-        width: 500px;
+        width: 600px;
     }
 
     #answer-buttons button {
@@ -168,35 +172,53 @@ h1 {
 
 /*Media query for laptops and larger screens (992 and up)*/
 @media screen and (min-width:992px) {
-
-    #homepage {
-        min-height: 80vh;
-    }
-
+    
     h1 {
         font-size: 6rem;
     }
     
     #intro-text p {
-        font-size: 4rem;
+        font-size: 3.5rem;
+    }
+
+    #start-button {
+        height: 100px;
+        width: 200px;
+        font-size: 2rem;
+    }
+
+    #question-container {
+        font-size: 2rem;
+    }
+
+    #quiz-image img {
+        width: 650px;
+        margin-top: 10px;
+    }
+
+    #score {
+        font-size: 2rem;
+    }
+
+    #next {
+        height: 60px;
+        width: 120px;
+        font-size: 2rem;
     }
 
 }
 
 /*Media query for computers,large laptops and upwards (1200px and higher)*/
 @media screen and (min-width:1200px) {
+
     h1 {
-    font-size: 7rem;
+    font-size: 6.5rem;
     margin-top: 50px;
     margin-bottom: 20px;
     }
 
     #intro-text {
         margin-bottom: 20px;
-    }
-
-    #intro {
-        font-size: 3rem;
     }
 
     #start-button {
@@ -209,7 +231,7 @@ h1 {
 
     #next {
         height: 80px;
-        width: 200px;
+        width: 160px;
         border-radius: 15px;
         margin-bottom: 20px;
         font-size: 2rem;
