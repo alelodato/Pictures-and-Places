@@ -1,7 +1,7 @@
 /* Homepage */
 #homepage-body {
     background: url(../images/homepage-background.webp) no-repeat center center/cover;
-    height: 100%;
+    min-height: 100vh;
 }
 
 #homepage {
@@ -9,6 +9,7 @@
     background-color: rgb(22, 97, 72,0.9);
     width: 100%;
     font-family: "Kaushan Script", cursive;
+    min-height: 60vh;
 }
 
 
@@ -49,13 +50,13 @@ h1 {
 }
 
 #next {
-    height: 50px;
-    width: 100px;
+    height: 40px;
+    width: 80px;
     border-radius: 15px;
-    margin: 10px 10px 10px 250px;
+    margin: 10px 10px 10px 220px;
     background-color: #a8cccc;
     color: #000000;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-family: "Kaushan Script", cursive;
 }
 
@@ -127,11 +128,58 @@ h1 {
 
 /*Media query for tablets and larger (768px and up)*/
 @media screen and (min-width:768px) {
+    #homepage-body {
+        min-height: 100vh;
+    }
+    
+    #homepage {
+        min-height: 70vh;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+    
+    #intro-text p {
+        font-size: 3rem;
+    }
+
+    #quiz-image img {
+        width: 500px;
+    }
+
+    #answer-buttons button {
+        font-size: 2rem;
+        width: 80%;
+    }
+
+    #next {
+        height: 50px;
+        width: 100px;
+        margin: 10px;
+        font-size: 1.5rem;
+    }
+
+    #score{
+        font-size: 1.3rem;
+    }
 
 }
 
 /*Media query for laptops and larger screens (992 and up)*/
 @media screen and (min-width:992px) {
+
+    #homepage {
+        min-height: 80vh;
+    }
+
+    h1 {
+        font-size: 6rem;
+    }
+    
+    #intro-text p {
+        font-size: 4rem;
+    }
 
 }
 
