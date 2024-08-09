@@ -5,14 +5,19 @@ const startButton = document.getElementById("start-button");
 const title = document.getElementById('title');
 const intro = document.getElementById('intro');
 const nextButton = document.getElementById('next');
+const getResults = document.getElementById('results');
 const scoreTracker = document.getElementById('score');
 const container = document.getElementById('container');
 const infoContainer = document.getElementById('info');
 const quizImage = document.getElementById('quiz-image');
+const endMessage = document.getElementById('quiz-end');
+const restartButton = document.getElementById('restart');
 let shuffledQuestions, currentQuestionIndex;
 
 startButton.addEventListener('click', startGame);
+restartButton.addEventListener('click', startGame);
 nextButton.addEventListener('click', nextQuestion);
+getResults.addEventListener('click', endQuiz);
 
 function startGame() {
   startButton.classList.add('hide')
@@ -62,6 +67,10 @@ function checkAnswer(event) {
     incrementIncorrect();
   }
   answerInfo();
+  if (shuffledQuestions.length > currentQuestionIndex){
+    nextButton.classList.add('hide');
+    getResults.classList.remove('hide');
+  }
 }
 
 
@@ -88,6 +97,9 @@ function incrementIncorrect () {
 }
 
 function endQuiz(){
+  endMessage.classList.remove('hide');
+  restartButton.classList.remove('hide');
+
 
 }
 

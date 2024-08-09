@@ -64,6 +64,36 @@ h1 {
     cursor: pointer;
 }
 
+#results {
+    height: 40px;
+    width: 80px;
+    border-radius: 15px;
+    margin: 10px 10px 10px 220px;
+    background-color: #a8cccc;
+    color: #000000;
+    font-size: 1rem;
+    font-family: "Kaushan Script", cursive;
+}
+
+#results:hover {
+    cursor: pointer;
+}
+
+#restart {
+    height: 40px;
+    width: 80px;
+    border-radius: 15px;
+    margin: 10px 10px 10px 220px;
+    background-color: #a8cccc;
+    color: #000000;
+    font-size: 1rem;
+    font-family: "Kaushan Script", cursive;
+}
+
+#restart:hover {
+    cursor: pointer;
+}
+
 #question-container {
     text-align: center;
     font-size: 1.5rem;
