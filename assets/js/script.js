@@ -54,12 +54,13 @@ function showQuestion(questions) {
 
 function checkAnswer(event) {
   const selectedAnswer = event.target;
-  console.log('SELECTED: ', selectedAnswer)
   const correct = selectedAnswer.dataset.correct === "true";
-  console.log('CORRECT: ', correct)
   if (correct){
-    selectedAnswer.style.backgroundColor = "lightgreen"
-  } else {selectedAnswer.style.backgroundColor = "red"};
+    selectedAnswer.style.backgroundColor = "lightgreen";
+    incrementCorrect();
+  } else {selectedAnswer.style.backgroundColor = "red";
+    incrementIncorrect();
+  }
   answerInfo();
 }
 
@@ -72,6 +73,18 @@ function answerInfo (questions) {
   infoContainer.classList.remove('hide');
   infoContainer.innerHTML = "";
   infoContainer.innerText = questions.info;
+}
+
+function incrementCorrect () {
+  let previousCorrect = parseInt(document.getElementById('right').textContent);
+    document.getElementById('right').textContent = previousCorrect + 1;
+
+}
+
+function incrementIncorrect () {
+  let previousIncorrect = parseInt(document.getElementById('wrong').textContent);
+    document.getElementById('wrong').textContent = previousIncorrect + 1;
+
 }
 
 function endQuiz(){
