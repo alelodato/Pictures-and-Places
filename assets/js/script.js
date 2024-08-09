@@ -1,6 +1,6 @@
 const questionContainer = document.getElementById('question-container');
 const answerButtons = document.getElementById('answer-buttons');
-const answerButton = document.getElementsByClassName('option');
+const answerButton =document.getElementById('option'); 
 const startButton = document.getElementById("start-button");
 const title = document.getElementById('title');
 const intro = document.getElementById('intro');
@@ -54,11 +54,12 @@ function showQuestion(questions) {
 
 function checkAnswer(event) {
   const selectedAnswer = event.target;
-  const correct = selectedAnswer.dataset.correct;
-  answerButtons.appendChild(button);
-  if (questions.answers === correct){
-    button.style.backgroundColor = "lightgreen"
-  } else {button.style.backgroundColor = "red"};
+  console.log('SELECTED: ', selectedAnswer)
+  const correct = selectedAnswer.dataset.correct === "true";
+  console.log('CORRECT: ', correct)
+  if (correct){
+    selectedAnswer.style.backgroundColor = "lightgreen"
+  } else {selectedAnswer.style.backgroundColor = "red"};
   answerInfo();
 }
 
@@ -70,6 +71,7 @@ function resetAnswers() {
 function answerInfo (questions) {
   infoContainer.classList.remove('hide');
   infoContainer.innerHTML = "";
+  infoContainer.innerText = questions.info;
 }
 
 function endQuiz(){
