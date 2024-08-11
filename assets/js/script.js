@@ -26,7 +26,7 @@ function startGame() {
   answerButtons.classList.remove('hide')
   nextButton.classList.remove('hide')
   scoreTracker.classList.remove('hide')
-  shuffledQuestions = questions.sort(() => Math.random() - 0.5)
+  shuffledQuestions = questions.sort(() => Math.random() - .5)
   currentQuestionIndex = 0
   nextQuestion()
 
@@ -68,9 +68,10 @@ function checkAnswer(event) {
     alert(`Sorry! That's not the correct answer...${questionsInfo}`);
     incrementIncorrect();
   }
-  if (shuffledQuestions.length > currentQuestionIndex){
+  if (currentQuestionIndex > shuffledQuestions){
     nextButton.classList.add('hide');
     getResults.classList.remove('hide');
+    console.log("finish");
   }
 }
 
