@@ -97,6 +97,7 @@ h1 {
 #question-container {
     text-align: center;
     font-size: 1.5rem;
+    color: #000000;
 }
 
 #answers-image {
@@ -117,6 +118,7 @@ h1 {
     font-family: "Kaushan Script", cursive;
     background-color: #1cd0b2;
     margin: 5px;
+    color: #000000;
 }
 
 #answer-buttons button:hover {
