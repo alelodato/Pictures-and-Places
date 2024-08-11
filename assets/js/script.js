@@ -8,7 +8,6 @@ const nextButton = document.getElementById('next');
 const getResults = document.getElementById('results');
 const scoreTracker = document.getElementById('score');
 const container = document.getElementById('container');
-const infoContainer = document.getElementById('info');
 const quizImage = document.getElementById('quiz-image');
 const endMessage = document.getElementById('quiz-end');
 const restartButton = document.getElementById('restart');
@@ -40,7 +39,7 @@ function nextQuestion() {
 }
 
 function showQuestion(questions) {
-  questionContainer.innerText = questions.question
+  questionContainer.innerText = questions.question;
   answerButtons.innerHTML = "";
   quizImage.innerHTML = "";
   const image = document.createElement('img');
@@ -60,13 +59,15 @@ function showQuestion(questions) {
 function checkAnswer(event) {
   const selectedAnswer = event.target;
   const correct = selectedAnswer.dataset.correct === "true";
+  let questionsInfo = questions.info;
   if (correct){
     selectedAnswer.style.backgroundColor = "lightgreen";
     incrementCorrect();
+    alert(`Correct! ${questionsInfo}`);
   } else {selectedAnswer.style.backgroundColor = "red";
+    alert(`Sorry! That's not the correct answer...${questionsInfo}`);
     incrementIncorrect();
   }
-  answerInfo();
   if (shuffledQuestions.length > currentQuestionIndex){
     nextButton.classList.add('hide');
     getResults.classList.remove('hide');
@@ -76,12 +77,6 @@ function checkAnswer(event) {
 
 function resetAnswers() {
   answerButtons.innerHTML = "";
-}
-
-function answerInfo (questions) {
-  infoContainer.classList.remove('hide');
-  infoContainer.innerHTML = "";
-  infoContainer.innerText = questions.info;
 }
 
 function incrementCorrect () {
