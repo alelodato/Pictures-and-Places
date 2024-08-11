@@ -97,8 +97,11 @@ function incrementIncorrect () {
 }
 
 function endQuiz(){
+  questionContainer.classList.add('hide');
+  answerButtons.classList.add('hide');
   endMessage.classList.remove('hide');
   restartButton.classList.remove('hide');
+  
 
 
 }
