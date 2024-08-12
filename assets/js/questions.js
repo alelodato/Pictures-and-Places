@@ -109,6 +109,6 @@ const questions = [
   ],
     correctAnswer: 'Bolivia',
     imageUrl: "../assets/images/salar.webp",
-    info:"Salar de Uyuni is the world's largest salt flat, at over 10,000 square kilometres in area.It is located in southwest Bolivia in southwest Bolivia, near the crest of the Andes at an elevation of 3,656 m above sea level.The Salar was formed as a result of transformations between several prehistoric lakes that existed around forty thousand years ago but had all evaporated over time. It is now covered by a few meters of salt crust, which has an extraordinary flatness with the average elevation variations within one meter over the entire area of the Salar."       
+    info:"Salar de Uyuni is the world's largest salt flat, at over 10,000 square kilometres in area.It is located in southwest Bolivia, near the crest of the Andes at an elevation of 3,656 m above sea level.The Salar was formed as a result of transformations between several prehistoric lakes that existed around forty thousand years ago but had all evaporated over time. It is now covered by a few meters of salt crust, which has an extraordinary flatness with the average elevation variations within one meter over the entire area of the Salar."       
   }
 ];

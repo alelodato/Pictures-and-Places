@@ -149,8 +149,12 @@ h1 {
     margin: 3px;
 }
 
-.hide{
+.hide {
      display: none;
+}
+
+#quiz-end {
+    font-size: 1rem;
 }
 
 /*Media query for large or landscape phones (570px and up)*/
@@ -196,7 +200,25 @@ h1 {
         font-size: 1.5rem;
     }
 
+    #results {
+        height: 50px;
+        width: 100px;
+        margin: 10px;
+        font-size: 1.5rem;
+    }
+
+    #restart {
+        height: 50px;
+        width: 100px;
+        margin: 10px;
+        font-size: 1.5rem;
+    }
+
     #score{
+        font-size: 1.3rem;
+    }
+
+    #quiz-end {
         font-size: 1.3rem;
     }
 
@@ -238,6 +260,22 @@ h1 {
         font-size: 2rem;
     }
 
+    #results {
+        height: 60px;
+        width: 120px;
+        font-size: 2rem;
+    }
+
+    #restart {
+        height: 60px;
+        width: 120px;
+        font-size: 2rem;
+    }
+
+    #quiz-end {
+        font-size: 2rem;
+    }
+
 }
 
 /*Media query for computers,large laptops and upwards (1200px and higher)*/
@@ -271,6 +309,16 @@ h1 {
         border-radius: 15px;
         margin-bottom: 20px;
         font-size: 2rem;
+    }
+
+    #results {
+        height: 80px;
+        width: 160px;
+    }
+
+    #restart {
+        height: 80px;
+        width: 160px;
     }
 
     #question-container {

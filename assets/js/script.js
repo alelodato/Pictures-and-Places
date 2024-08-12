@@ -18,6 +18,7 @@ startButton.addEventListener('click', startGame);
 restartButton.addEventListener('click', startGame);
 nextButton.addEventListener('click', nextQuestion);
 getResults.addEventListener('click', endQuiz);
+restartButton.addEventListener('click', startGame);
 
 function startGame() {
   startButton.classList.add('hide')
@@ -27,6 +28,10 @@ function startGame() {
   answerButtons.classList.remove('hide')
   nextButton.classList.remove('hide')
   scoreTracker.classList.remove('hide')
+  questionContainer.classList.add('hide');
+  quizImage.classList.remove('hide');
+  endMessage.classList.add('hide');
+  restartButton.classList.add('hide');
   shuffledQuestions = questions.sort(() => Math.random() - .5)
   currentQuestionIndex = 0
   nextQuestion()
@@ -65,24 +70,20 @@ function checkAnswer(event) {
   const correct = selectedAnswer.dataset.correct === "true";
   console.log('questionsInfo: ', questionsInfo)
   if (correct){
-    console.log('IN correct')
-    console.log('QUESTIONS INFO: ', questionsInfo)
     selectedAnswer.style.backgroundColor = "lightgreen";
     incrementCorrect();
     alert(`Correct! ${questionsInfo}`);
   } else {selectedAnswer.style.backgroundColor = "red";
-    console.log('IN ELSE')
-    console.log('QUESTIONS INFO: ', questionsInfo)
     alert(`Sorry! That's not the correct answer...${questionsInfo}`);
     incrementIncorrect();
   }
-  if (currentQuestionIndex > shuffledQuestions +1){
+  if (currentQuestionIndex === questions.length){
     nextButton.classList.add('hide');
     getResults.classList.remove('hide');
     console.log("finish");
-  }
-  nextButton.classList.remove('hide')
+  }else {nextButton.classList.remove('hide')
   scoreTracker.classList.remove('hide')
+  }
 }
 
 function resetAnswers() {
@@ -106,11 +107,11 @@ function incrementIncorrect () {
 function endQuiz(){
   questionContainer.classList.add('hide');
   answerButtons.classList.add('hide');
+  quizImage.classList.add('hide');
+  getResults.classList.add('hide')
   endMessage.classList.remove('hide');
   restartButton.classList.remove('hide');
-  
-
-
+  scoreTracker.classList.remove('hide')
 }
 
 
