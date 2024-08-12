@@ -28,10 +28,11 @@ function startGame() {
   answerButtons.classList.remove('hide')
   nextButton.classList.remove('hide')
   scoreTracker.classList.remove('hide')
-  questionContainer.classList.add('hide');
   quizImage.classList.remove('hide');
   endMessage.classList.add('hide');
   restartButton.classList.add('hide');
+  document.getElementById('right').textContent = 0;
+  document.getElementById('wrong').textContent = 0;
   shuffledQuestions = questions.sort(() => Math.random() - .5)
   currentQuestionIndex = 0
   nextQuestion()
