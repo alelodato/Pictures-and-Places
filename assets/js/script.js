@@ -36,7 +36,6 @@ function startGame() {
   shuffledQuestions = questions.sort(() => Math.random() - .5)
   currentQuestionIndex = 0
   nextQuestion()
-
 }
 
 function nextQuestion() {

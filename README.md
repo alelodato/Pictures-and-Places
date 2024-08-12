@@ -56,6 +56,8 @@ The website features 4 different buttons to navigate it. The first one is the st
 
 ![alt text](assets/images/readme-img/start-button.png)
 ![alt text](assets/images/readme-img/next-button.png)
+![alt text](assets/images/readme-img/finish-button.png)
+![alt text](assets/images/readme-img/restart-button.png)
 
 ### THE HEADER:
 
@@ -104,14 +106,14 @@ It's located on the bottom left side of the page.
 
 This is a pop up message that appears after the user enters an answer. This feedback message is going to tell the user if the answer entered is right or wrong, and it's going to show some infos about the place featured in the question.I decided to use a pop up alert as the game page is quite full of content itself, and i think a pop up alert keeps it quite clear and easy to read, not going in conflict with the rest of the content in the quiz game, keeping the user experience and accessibility good.
 
-![alt text]()
+![alt text](assets/images/readme-img/info-alert.png)
 
 ### THE GAME END MESSAGE:
 
 The game end message, appears after the user submits the last answer, and press the finish button.
 This message is made to let the user know that the quiz has been completed, and to give a feedback about the correct answers scored. 
 
-![alt text]()
+![alt text](assets/images/readme-img/end-message.png)
 
 ## TECHNOLOGIES USED
 

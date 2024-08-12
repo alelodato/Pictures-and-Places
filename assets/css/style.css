@@ -282,7 +282,7 @@ h1 {
 @media screen and (min-width:1200px) {
 
     h1 {
-    font-size: 6.5rem;
+    font-size: 5rem;
     margin-top: 50px;
     margin-bottom: 20px;
     }
@@ -291,8 +291,12 @@ h1 {
         margin-bottom: 20px;
     }
 
+    #intro-text p {
+        font-size: 3rem;
+    }
+
     #homepage {
-        min-height: 85vh;
+        min-height: 90vh;
     }
 
     #start-button {
@@ -322,7 +326,8 @@ h1 {
     }
 
     #question-container {
-        font-size: 1.8rem;
+        font-size: 2rem;
+        padding-top: 10px;
     }
 
     #answers-image {
