@@ -73,11 +73,15 @@ function checkAnswer(event) {
     getResults.classList.remove('hide');
     console.log("finish");
   }
+  nextButton.classList.remove('hide')
+  scoreTracker.classList.remove('hide')
 }
 
 
 function resetAnswers() {
   answerButtons.innerHTML = "";
+  nextButton.classList.add('hide')
+  scoreTracker.classList.add('hide')
 }
 
 function incrementCorrect () {

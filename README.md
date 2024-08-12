@@ -152,10 +152,10 @@ I have gone through each page using google chrome developer tools to ensure that
 [W3C](https://validator.w3.org/) was used to validate the HTML on all pages of the website. It was also used to validate the CSS.
 
 * index.html - Passed.
-* training.html - Passed.
-* trial.html - Passed.
-* formdump.html - Passed.
 * style.css - Passed, no errors found.
+* script.js - Passed.
+* questions.js - Passed.
+
 
 - - -
 
@@ -182,69 +182,32 @@ Full testing was performed on the following devices:
 * Firefox
 * Microsoft Edge
 
-`Home Page`
+`Features Manual Testing`
 
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
-| The Sites Title | Link directs the user back to the home page | Clicked title | Home page reloads | Pass |
-| Mobile devices toggle menu | Shows and hides the navigation menu when clicked| Clicked on the icon | Navigation Menu shown and hidden when clicking the icon | Pass |
-| Video | Video commands work | Clicked on play,full screen and playback speed button | Video is played and paused,is opened on full screen and playback speed can be modified | Pass |
-| Free Training Session Link | Directs the user to the trial page | Clicked on link | Trial page opens | Pass |
-| Free Training Link hover effect | The link should change colour text when hovered over. | Hover over the link | The link displayed the correct styling when hovered over | Pass |
-| Iframe Map | Shows the right location,is interactive and can be navigated | Checked pinned location,click and drag on map,use the zoom button | Football academy location pinned,the map can be navigated,zoom and unzoomed | Pass |
-| Footer social networks icons | The social networks icons are linked to the respective social network website,that should open on a new window  | Click on every social network icon | The social network website page is opened on a new window when the respective icon is clicked | Pass |
-
-`Training Page`
-
-| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
-| --- | --- | --- | --- | --- |
-| The Sites Title | Link directs the user back to the home page | Clicked title | Home page reloads | Pass |
-| Free Training Session Link | Directs the user to the trial page | Clicked on link | Trial page opens | Pass |
-| Free Training Link hover effect | The link should change colour text when hovered over. | Hover over the link | The link displayed the correct styling when hovered over | Pass |
-| Footer social networks icons | The social networks icons are linked to the respective social network website,that should open on a new window  | Click on every social network icon | The social network website page is opened on a new window when the respective icon is clicked | Pass |
-
-`Trial Page`
-
-| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
-| --- | --- | --- | --- | --- |
-| The Sites Title | Link directs the user back to the home page | Clicked title | Home page reloads | Pass |
-| Form Required Fields | Form can't be submitted if all the fields are not filled correctly | Filled form fields uncorrectly | Form can't be submitted | Pass |
-| Form Submission| Signup form that directs the user to the Formdump page if required fields are filled | Filled all the required fields in the form | Formdump page opens | Pass |
-| Form Button hover effect | The button background and text should swap colours text when hovered over. | Hover over the button | The button displayed the correct styling when hovered over | Pass |
-| Footer social networks icons | The social networks icons are linked to the respective social network website,that should open on a new window  | Click on every social network icon | The social network website page is opened on a new window when the respective icon is clicked | Pass |
-
-`Formdump Page`
-
-| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
-| --- | --- | --- | --- | --- |
-| The Sites Title | Link directs the user back to the home page | Clicked title | Home page reloads | Pass |
-| Back to homepage Link | Directs the user to the home page | Clicked on link | Home page opens | Pass |
-| Back to homepage hover effect | The link should change colour text when hovered over. | Hover over the link | The link displayed the correct styling when hovered over | Pass |
-| Footer social networks icons | The social networks icons are linked to the respective social network website,that should open on a new window  | Click on every social network icon | The social network website page is opened on a new window when the respective icon is clicked | Pass |
+| The Start Button | Button starts the quiz game | Clicked button | Quiz Game Starts | Pass |
+| The Start Button | Button hides intro text content and shows quiz game content| Clicked on the button | Intro text content hidden,quiz game content shown | Pass |
+| Answer Buttons | Buttons recognise correct and incorrect answers | Clicked on button| Button turns green if answer is correct,wrong if answer is incorrect and respective alerts are shown | Pass |
+| Next Button | Button shows next question when pressed | Clicked on the button | Next question shows | Pass |
+| Quiz questions showing correctly | Each quiz question need to show in random order with respective answer options and quiz image | Press start or next button | The quiz questions are showing in random order with respective image and answer options | Pass |
+| Score Tracker | Keeps track of correct and incorrect answers submit by the user | Answer correct or incorrect answer | Score tracker counter updated | Pass |
+| Info Alerts | Alert show if answer is correct or incorrect with question related infos| Amswer question | Correct alert message shown | Pass |
+| Finish Button | Button appears on the last question | Clicked next button to last question | Next button hidden, finish button shown | Pass |
+| Finish button | End game when pressed, showing quiz result message | Clicked on button | Quiz game ends, result message shown | Pass |
+|  Quiz Result Message | The message should show the number of correct answer submit by the user | Press finish button to show quiz result message | The message shows the right number of correct answers | Pass |
+| Play Again Button | The button should allow the user to start a new game | Click on button | New game starts | Pass |
 
 ### BUGS
 
-* Had to fix the formdump link to the form submit button as i was using an absolute path,and it 
-wasn't working on my deployed page;
-This is how the code looked before i fixed it:
 
-      <form id="signup-form" action="/formdump.html">
-
-After i removed the / from formdump.html,the link worked correctly;
-
-* Had to add a code to  embed the iframe map as it wasn't working on the deployed page;
-This is how i got the code:
-
-![alt text](assets/images/readme-images/map-screenshot.webp)
-
-I have no  unfixed bugs to report.
 
 ## DEPLOYMENT
 
 The site was deployed to GitHub pages.
 The steps to deploy are as follows:
 1. Login (or signup) to Github.
-2. Go to the repository for this project, [alelodato/The-Football-Academy](https://github.com/alelodato/The-Football-Academy).
+2. Go to the repository for this project, [alelodato/Pictures-And-Places](https://github.com/alelodato/Pictures-and-Places).
 3. Click the settings button.
 4. Select pages in the left hand navigation menu.
 5. From the source dropdown select main branch and press save.
@@ -255,7 +218,7 @@ The steps to deploy are as follows:
 To fork the repository:
 
 1. Log in (or sign up) to Github.
-2. Go to the repository for this project, [alelodato/The-Football-Academy](https://github.com/alelodato/The-Football-Academy)
+2. Go to the repository for this project, [alelodato/Pictures-And-Paces](https://github.com/alelodato/Pictures-and-Places)
 3. Click the Fork button in the top right corner.
 
 #### How to Clone
@@ -263,7 +226,7 @@ To fork the repository:
 To clone the repository:
 
 1. Log in (or sign up) to GitHub.
-2. Go to the repository for this project, [alelodato/The-Football-Academy](https://github.com/alelodato/The-Football-Academy)
+2. Go to the repository for this project, [alelodato/Pictures-And-Places](https://github.com/alelodato/Pictures-and-Places)
 3. Click on the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
 4. Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
 5. Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
