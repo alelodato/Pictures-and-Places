@@ -12,6 +12,7 @@ const quizImage = document.getElementById('quiz-image');
 const endMessage = document.getElementById('quiz-end');
 const restartButton = document.getElementById('restart');
 let shuffledQuestions, currentQuestionIndex;
+let questionsInfo;
 
 startButton.addEventListener('click', startGame);
 restartButton.addEventListener('click', startGame);
@@ -42,6 +43,7 @@ function showQuestion(questions) {
   questionContainer.innerText = questions.question;
   answerButtons.innerHTML = "";
   quizImage.innerHTML = "";
+  questionsInfo = questions.info;
   const image = document.createElement('img');
   image.src = questions.imageUrl;
   quizImage.appendChild(image);
@@ -54,21 +56,27 @@ function showQuestion(questions) {
       button.dataset.correct = answers.correct;
   }
   })
+  console.table(questions.info)
 };
 
 function checkAnswer(event) {
+  console.log('IN checkAnswer')
   const selectedAnswer = event.target;
   const correct = selectedAnswer.dataset.correct === "true";
-  let questionsInfo = questions.info;
+  console.log('questionsInfo: ', questionsInfo)
   if (correct){
+    console.log('IN correct')
+    console.log('QUESTIONS INFO: ', questionsInfo)
     selectedAnswer.style.backgroundColor = "lightgreen";
     incrementCorrect();
     alert(`Correct! ${questionsInfo}`);
   } else {selectedAnswer.style.backgroundColor = "red";
+    console.log('IN ELSE')
+    console.log('QUESTIONS INFO: ', questionsInfo)
     alert(`Sorry! That's not the correct answer...${questionsInfo}`);
     incrementIncorrect();
   }
-  if (currentQuestionIndex > shuffledQuestions){
+  if (currentQuestionIndex > shuffledQuestions +1){
     nextButton.classList.add('hide');
     getResults.classList.remove('hide');
     console.log("finish");
@@ -76,7 +84,6 @@ function checkAnswer(event) {
   nextButton.classList.remove('hide')
   scoreTracker.classList.remove('hide')
 }
-
 
 function resetAnswers() {
   answerButtons.innerHTML = "";

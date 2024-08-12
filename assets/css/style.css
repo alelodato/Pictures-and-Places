@@ -41,7 +41,7 @@ h1 {
     margin-bottom: 20px;
     background-color: #a8cccc;
     color: #000000;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-family: "Kaushan Script", cursive;
 }
 
@@ -169,7 +169,7 @@ h1 {
     }
     
     #homepage {
-        min-height: 70vh;
+        min-height: 75vh;
     }
 
     h1 {
@@ -253,6 +253,10 @@ h1 {
         margin-bottom: 20px;
     }
 
+    #homepage {
+        min-height: 85vh;
+    }
+
     #start-button {
         height: 80px;
         width: 200px;
@@ -270,7 +274,7 @@ h1 {
     }
 
     #question-container {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
     #answers-image {
