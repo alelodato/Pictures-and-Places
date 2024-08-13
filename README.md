@@ -161,6 +161,8 @@ I have gone through each page using google chrome developer tools to ensure that
 
 ![alt text](assets/images/readme-img/html-validator.png)
 ![alt text](assets/images/readme-img/css-validator.png)
+![alt text](assets/images/readme-img/script-validation.png)
+![alt text](assets/images/readme-img/questions-validation.png)
 
 
 - - -

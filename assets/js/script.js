@@ -70,6 +70,8 @@ function checkAnswer(event) {
     alert(`Correct! ${questionsInfo}`);
   } else {selectedAnswer.style.backgroundColor = "red";
     alert(`Sorry! That's not the correct answer...${questionsInfo}`);
+    let correctAnswer = document.querySelector("[data-correct='true']");
+    correctAnswer.style.backgroundColor = "lightgreen";
     incrementIncorrect();
   }
   if (currentQuestionIndex === questions.length){
