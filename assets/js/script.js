@@ -109,16 +109,18 @@ function checkAnswer(event) {
   // Check if the selected answer is correct, assigning styles to the buttons and showing an alert message
   if (correct){
     selectedAnswer.style.backgroundColor = "lightgreen";
-    // Increments score tracker correct answers counter
+    // Increments score tracker for correct answers
     incrementCorrect();
     alert(`Correct! ${questionsInfo}`);
   } else {selectedAnswer.style.backgroundColor = "red";
     alert(`Sorry! That's not the correct answer...${questionsInfo}`);
     let correctAnswer = document.querySelector("[data-correct='true']");
     correctAnswer.style.backgroundColor = "lightgreen";
-    // Increments score tracker incorrect answers tracker
+    // Increments score tracker for incorrect answers 
     incrementIncorrect();
   }
+  let answerButton = document.getElementById('option')
+  answerButton.disabled = true;
   // Checks if the user reached the last question, and in that case hides the next button and shows the finish button to allow to finish the game and show the results
   if (currentQuestionIndex === questions.length){
     nextButton.classList.add('hide');
