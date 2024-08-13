@@ -1,4 +1,6 @@
-// Game Questions and Answers
+/**
+ *  Game Questions and Answers
+*/
 const questions = [
   {
     question: 'This is the skyline of the largest city in South America.Which is:',

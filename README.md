@@ -5,7 +5,7 @@
 Visit the deployed website: https://alelodato.github.io/Pictures-and-Places/;
 
 Pictures And Places is an interactive quiz game made for anyone who loves travels and geography and want to test their knowledge.
-Users on this website can participate to a quiz game showing 10 questions with a related picture to each one of them. The users are requested to guess where the place shown in the picture is located, and to do that is provided with 4 possible answers. A correct or incorrect answer is going to be registered with a score tracker at the bottom left of the page so that the users can keep track of their progresses throughout the game, and at the end of it, they will receive a feedback with the number of correct answers, and are given the chance to play again.
+Users on this website can participate to a quiz game showing 10 questions with a related picture to each one of them. The users are requested to guess where the place shown in the picture is located, and to do that is provided with 4 possible answers. A correct or incorrect answer is going to be registered with a score tracker at the bottom left of the page so that the users can keep track of their progresses throughout the game, and at the end of it, they will receive a feedback with the score, and are given the chance to play again.
 
 ## DESIGN
 
@@ -52,7 +52,7 @@ Wireframes were created for mobile,tablet and desktop using Balsamiq.
 
 ### NAVIGATION:
 
-The website features 4 different buttons to navigate it. The first one is the start button, located under the website intro text content, it allows the user to start the quiz game, hiding and making the quiz game appear when pressed.The second button is the next button, located under the quiz section, allows the user to progress to the next question of the game. The third button is the finish button,which is gonna appear instead of the next button when the user reaches the last question of the game. The finish button is gonna end the quiz game and hides the quiz game content showing results and an end of the game message to the user.The last button that can be found is the play again button, which allows the player to start a new quiz game.
+The website features 4 different buttons to navigate it. The first one is the start button, located under the website intro text content, it allows the user to start the quiz game, hiding and making the quiz game appear when pressed.The second button is the next button, located under the quiz section, allows the user to progress to the next question of the game. The third button is the finish button,which is gonna appear instead of the next button when the user reaches the last question of the game. The finish button is gonna end the quiz game and hides the quiz game content showing results and an end of the game message to the user.The last button that can be found is the play again button, which allows the player to start a new game.
 
 ![alt text](assets/images/readme-img/start-button.png)
 ![alt text](assets/images/readme-img/next-button.png)
