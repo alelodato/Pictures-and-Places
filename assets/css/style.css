@@ -49,6 +49,7 @@ h1 {
     cursor: pointer;
 }
 
+/* Quiz Game Content */
 #next {
     height: 40px;
     width: 80px;
@@ -134,6 +135,7 @@ h1 {
     width: 300px;
 }
 
+/*Info message and Score Tracker*/
 #info {
     background-color: #fafafa;
     height: 70%;
