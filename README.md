@@ -149,14 +149,18 @@ I have gone through each page using google chrome developer tools to ensure that
 
 ## AUTOMATED TESTING
 
-### W3C Validator
+### HTML,CSS and JAVASCRIPT Validator
 
-[W3C](https://validator.w3.org/) was used to validate the HTML on all pages of the website. It was also used to validate the CSS.
+[W3C](https://validator.w3.org/) was used to validate the HTML on all pages of the website. It was also used to validate the CSS.To validate Javascript files i used [JSHINT](https://jshint.com/).
 
 * index.html - Passed.
 * style.css - Passed, no errors found.
-* script.js - Passed.
-* questions.js - Passed.
+* script.js - Passed, with warnings about the use of const and let in different browsers (code works correctly on all browsers).
+* questions.js - Passed, with warnings about the use of const and let in different browsers (code works correctly on all browsers).
+
+
+![alt text](assets/images/readme-img/html-validator.png)
+![alt text](assets/images/readme-img/css-validator.png)
 
 
 - - -
@@ -165,7 +169,7 @@ I have gone through each page using google chrome developer tools to ensure that
 
 I confirm that all the pages of the website perform well and that the colors and fonts chosen are easy to read and accessible by running it through Lightouse in devtools:
 
-![alt text](assets/images/readme-images/lightouse-report.webp)
+![alt text](assets/images/readme-img/lighthouse-report.png)
 
 ## MANUAL TESTING
 
@@ -174,7 +178,7 @@ Full testing was performed on the following devices:
 * Laptop:
   * ASUS Vivobook S14
 * Mobile Devices:
-  * iPhone 14.
+  * iPhone 14
   * Samsung S22
 
   Each device tested the site using the following browsers:
@@ -202,6 +206,8 @@ Full testing was performed on the following devices:
 
 ### BUGS
 
+At first when website was deployed, quiz images would not show.
+I correct this bug by
 
 
 ## DEPLOYMENT
@@ -236,7 +242,9 @@ To clone the repository:
 - - -
 
 ## CREDITS
-    
+
+I want to credit and say thank you to the Code Institute tutoring team for helping through the realization of this project anytime i found some issues with my code. All the tutors have been keen on helping and their help was useful to complete this project. 
+
 All the icons used for the toggle menu,the reasons section,the footer and the website favicon,were taken from the [Font Awesome](https://fontawesome.com/) website;
 
 The font used in the website,"Bebas Neue" and "Urbanist",were taken from [Google Font](https://fonts.google.com/);

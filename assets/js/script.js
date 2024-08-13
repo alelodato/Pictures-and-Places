@@ -1,13 +1,11 @@
 const questionContainer = document.getElementById('question-container');
 const answerButtons = document.getElementById('answer-buttons');
-const answerButton =document.getElementById('option'); 
 const startButton = document.getElementById("start-button");
 const title = document.getElementById('title');
 const intro = document.getElementById('intro');
 const nextButton = document.getElementById('next');
 const getResults = document.getElementById('results');
 const scoreTracker = document.getElementById('score');
-const container = document.getElementById('container');
 const quizImage = document.getElementById('quiz-image');
 const endMessage = document.getElementById('quiz-end');
 const restartButton = document.getElementById('restart');
@@ -21,21 +19,21 @@ getResults.addEventListener('click', endQuiz);
 restartButton.addEventListener('click', startGame);
 
 function startGame() {
-  startButton.classList.add('hide')
-  title.classList.add('hide')
-  intro.classList.add('hide')
-  questionContainer.classList.remove('hide')
-  answerButtons.classList.remove('hide')
-  nextButton.classList.remove('hide')
-  scoreTracker.classList.remove('hide')
+  startButton.classList.add('hide');
+  title.classList.add('hide');
+  intro.classList.add('hide');
+  questionContainer.classList.remove('hide');
+  answerButtons.classList.remove('hide');
+  nextButton.classList.remove('hide');
+  scoreTracker.classList.remove('hide');
   quizImage.classList.remove('hide');
   endMessage.classList.add('hide');
   restartButton.classList.add('hide');
   document.getElementById('right').textContent = 0;
   document.getElementById('wrong').textContent = 0;
-  shuffledQuestions = questions.sort(() => Math.random() - .5)
-  currentQuestionIndex = 0
-  nextQuestion()
+  shuffledQuestions = questions.sort(() => Math.random() - 0.5);
+  currentQuestionIndex = 0;
+  nextQuestion();
 }
 
 function nextQuestion() {
@@ -60,15 +58,12 @@ function showQuestion(questions) {
     if (answers.correct) {
       button.dataset.correct = answers.correct;
   }
-  })
-  console.table(questions.info)
-};
+  });
+}
 
 function checkAnswer(event) {
-  console.log('IN checkAnswer')
   const selectedAnswer = event.target;
   const correct = selectedAnswer.dataset.correct === "true";
-  console.log('questionsInfo: ', questionsInfo)
   if (correct){
     selectedAnswer.style.backgroundColor = "lightgreen";
     incrementCorrect();
@@ -81,15 +76,15 @@ function checkAnswer(event) {
     nextButton.classList.add('hide');
     getResults.classList.remove('hide');
     console.log("finish");
-  }else {nextButton.classList.remove('hide')
-  scoreTracker.classList.remove('hide')
+  }else {nextButton.classList.remove('hide');
+  scoreTracker.classList.remove('hide');
   }
 }
 
 function resetAnswers() {
   answerButtons.innerHTML = "";
-  nextButton.classList.add('hide')
-  scoreTracker.classList.add('hide')
+  nextButton.classList.add('hide');
+  scoreTracker.classList.add('hide');
 }
 
 function incrementCorrect () {
@@ -108,10 +103,10 @@ function endQuiz(){
   questionContainer.classList.add('hide');
   answerButtons.classList.add('hide');
   quizImage.classList.add('hide');
-  getResults.classList.add('hide')
+  getResults.classList.add('hide');
   endMessage.classList.remove('hide');
   restartButton.classList.remove('hide');
-  scoreTracker.classList.remove('hide')
+  scoreTracker.classList.remove('hide');
 }
 
 
