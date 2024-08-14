@@ -21,7 +21,6 @@ const restartButton = document.getElementById('restart');
 let shuffledQuestions, currentQuestionIndex;
 // Variable to get the questions info text content
 let questionsInfo;
-let button;
 
 /**
  * Event Listeners
@@ -91,7 +90,7 @@ function showQuestion(questions) {
   
   // Create answers buttons, and fills them with text related to the current question
   questions.answers.forEach(answers => {
-    button = document.createElement('button');
+    const button = document.createElement('button');
     button.textContent = answers.text;
     answerButtons.appendChild(button);
     // Event listener to call the checkAnswer function when answer button is clicked
