@@ -21,7 +21,6 @@ const restartButton = document.getElementById('restart');
 let shuffledQuestions, currentQuestionIndex;
 // Variable to get the questions info text content
 let questionsInfo;
-
 /**
  * Event Listeners
  */
@@ -67,6 +66,7 @@ function nextQuestion() {
   // Shows next question in a random order
   showQuestion(shuffledQuestions[currentQuestionIndex]);
   currentQuestionIndex++;
+  // Enables answer buttons to be clicked for current question
   answerButtons.style.pointerEvents = "auto";
 }
 
@@ -106,7 +106,6 @@ function showQuestion(questions) {
  * And to show alert message related to the current question
  */
 function checkAnswer(event) {
-  console.log("check answer called")
   // Define variables for the selected answer to be targeted, and to check if is correct
   const selectedAnswer = event.target;
   const correct = selectedAnswer.dataset.correct === "true";
@@ -123,6 +122,7 @@ function checkAnswer(event) {
     // Increments score tracker for incorrect answers 
     incrementIncorrect();
   }
+  // Disallows answer buttons to be clicked after answer is submitted
   answerButtons.style.pointerEvents = "none";
   // Checks if the user reached the last question, and in that case hides the next button and shows the finish button to allow to finish the game and show the results
   if (currentQuestionIndex === questions.length){
