@@ -243,7 +243,7 @@ h1 {
     #start-button {
         height: 100px;
         width: 200px;
-        font-size: 1.5rem;
+        font-size: 1.7rem;
     }
 
     #question-container {
@@ -256,25 +256,25 @@ h1 {
     }
 
     #score {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     #next {
         height: 60px;
         width: 120px;
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     #results {
         height: 60px;
         width: 120px;
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     #restart {
         height: 60px;
         width: 120px;
-        font-size: 2rem;
+        font-size: 1.3rem;
     }
 
     #quiz-end {
@@ -309,15 +309,13 @@ h1 {
         width: 200px;
         border-radius: 15px;
         margin-bottom: 20px;
-        font-size: 1.7rem;
     }
 
     #next {
-        height: 80px;
-        width: 160px;
+        height: 70px;
+        width: 140px;
         border-radius: 15px;
         margin: 0;
-        font-size: 2rem;
     }
 
     #results {
@@ -350,7 +348,7 @@ h1 {
         display: block;
         padding: 5px 0.5rem;
         border-radius: 3rem;
-        font-size: 2rem;
+        font-size: 1.5rem;
         margin: 3rem 0;
     }
 
@@ -361,10 +359,6 @@ h1 {
 
     #quiz-image img {
         height: 400px;
-    }
-
-    #score {
-        font-size: 1.5rem;
     }
 }
 
