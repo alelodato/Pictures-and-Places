@@ -13,13 +13,13 @@ Users on this website can participate to a quiz game showing 10 questions with a
 
 As the website is made for a geography quiz game, i wanted to give it a light and colourful mood, but still keeping it simple to provide a good user experience.
 
-* For the quiz introduction and final message text content i have used the colour  #fafafa;
+* For the quiz introduction, questions, score tracker and final message text content i have used the colour  #fafafa;
     
 * For the cover text i have used the colour rgb(22, 97, 72,0.9);
 
 * For the buttons i have used the colour #000000 for the text content and #a8cccc for the background;
 
-* For the questions, answers button and score tracker text content i have used the colour #000000;
+* For the answers and all the other buttons text content i have used the colour #000000;
 
 * For the answers buttons background colour i have used #1cd0b2;
 
@@ -209,7 +209,7 @@ Full testing was performed on the following devices:
 ### BUGS
 
 At first when website was deployed, quiz images would not show.
-I correct this bug by
+I correct this bug by removing the slash from the images absolute file paths.
 
 
 ## DEPLOYMENT
