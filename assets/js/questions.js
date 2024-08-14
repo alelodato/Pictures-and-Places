@@ -32,7 +32,7 @@ const questions = [
       {text:'Genoa', correct:false},
       {text:'Porto',correct:false}
   ],
-    imageUrl: "../assets/images/quiz-img/oceanographic.webp",
+    imageUrl: "../images/quiz-img/oceanographic.webp",
     info:"L'Oceanogràfic ('The Oceanographic') is an oceanarium situated on the southeast of the city center of Valencia, Spain, where different marine habitats are represented."
   },
   {
