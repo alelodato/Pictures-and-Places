@@ -21,6 +21,7 @@ const restartButton = document.getElementById('restart');
 let shuffledQuestions, currentQuestionIndex;
 // Variable to get the questions info text content
 let questionsInfo;
+let button;
 
 /**
  * Event Listeners
@@ -67,6 +68,7 @@ function nextQuestion() {
   // Shows next question in a random order
   showQuestion(shuffledQuestions[currentQuestionIndex]);
   currentQuestionIndex++;
+  answerButtons.style.pointerEvents = "auto";
 }
 
 /**
@@ -85,9 +87,11 @@ function showQuestion(questions) {
   const image = document.createElement('img');
   image.src = questions.imageUrl;
   quizImage.appendChild(image);
+
+  
   // Create answers buttons, and fills them with text related to the current question
   questions.answers.forEach(answers => {
-    const button = document.createElement('button');
+    button = document.createElement('button');
     button.textContent = answers.text;
     answerButtons.appendChild(button);
     // Event listener to call the checkAnswer function when answer button is clicked
@@ -103,6 +107,7 @@ function showQuestion(questions) {
  * And to show alert message related to the current question
  */
 function checkAnswer(event) {
+  console.log("check answer called")
   // Define variables for the selected answer to be targeted, and to check if is correct
   const selectedAnswer = event.target;
   const correct = selectedAnswer.dataset.correct === "true";
@@ -119,8 +124,7 @@ function checkAnswer(event) {
     // Increments score tracker for incorrect answers 
     incrementIncorrect();
   }
-  let answerButton = document.getElementById('option')
-  answerButton.disabled = true;
+  answerButtons.style.pointerEvents = "none";
   // Checks if the user reached the last question, and in that case hides the next button and shows the finish button to allow to finish the game and show the results
   if (currentQuestionIndex === questions.length){
     nextButton.classList.add('hide');
@@ -171,6 +175,3 @@ function endQuiz(){
   restartButton.classList.remove('hide');
   scoreTracker.classList.remove('hide');
 }
-
-
-

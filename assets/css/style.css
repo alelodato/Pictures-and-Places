@@ -10,6 +10,7 @@
     width: 100%;
     font-family: "Kaushan Script", cursive;
     min-height: 60vh;
+    margin-top: 150px;
 }
 
 
@@ -98,7 +99,7 @@ h1 {
 #question-container {
     text-align: center;
     font-size: 1.5rem;
-    color: #000000;
+    color: #fafafa;
 }
 
 #answers-image {
@@ -145,6 +146,7 @@ h1 {
 #score {
     position: absolute;
     font-size: 1rem;
+    color:#fafafa;
 }
 
 .scores {
@@ -176,6 +178,7 @@ h1 {
     
     #homepage {
         min-height: 75vh;
+        margin-top: 0;
     }
 
     h1 {
@@ -248,7 +251,7 @@ h1 {
     }
 
     #quiz-image img {
-        width: 650px;
+        width: 600px;
         margin-top: 10px;
     }
 
@@ -313,7 +316,7 @@ h1 {
         height: 80px;
         width: 160px;
         border-radius: 15px;
-        margin-bottom: 20px;
+        margin: 0;
         font-size: 2rem;
     }
 
@@ -339,6 +342,7 @@ h1 {
 
     #answer-buttons {
         width: 45%;
+        margin: 0;
     }
 
     #answer-buttons button {
@@ -352,7 +356,15 @@ h1 {
 
     #quiz-image{
         width: 45%;
-        margin-top: 40px;
+        margin-top: 20px;
+    }
+
+    #quiz-image img {
+        height: 400px;
+    }
+
+    #score {
+        font-size: 1.5rem;
     }
 }
 
