@@ -1,7 +1,7 @@
+import Swal from 'sweetalert2/dist/sweetalert2.js';
 /**
  * Game Variables
  */
-
 // Game title,intro message and start button variables
 const title = document.getElementById('title');
 const intro = document.getElementById('intro');
