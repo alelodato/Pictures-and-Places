@@ -1,7 +1,7 @@
 /* Body And Intro Text Content */
 body {
     background: url(../images/quiz-img/homepage-background.webp) no-repeat center center/cover;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 #homepage {
@@ -217,7 +217,7 @@ h1 {
     }
 
     #answer-buttons button {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         width: 80%;
     }
 
@@ -257,7 +257,6 @@ h1 {
 @media screen and (min-width:992px) {
     #homepage {
         min-height: 80vh;
-        position: relative;
     }
 
     h1 {
@@ -311,7 +310,7 @@ h1 {
 @media screen and (min-width:1200px) {
 
     body {
-        height:100%;
+        min-height:100%;
     }
 
     h1 {
