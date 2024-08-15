@@ -157,6 +157,7 @@ h1 {
     font-family: "Kaushan Script", cursive;
     background-color: #1cd0b2;
     color: #000000;
+    border: solid #000000 1px;
 }
 
 /*Info message and Score Tracker*/
