@@ -1,7 +1,7 @@
 /* Body And Intro Text Content */
 body {
     background: url(../images/quiz-img/homepage-background.webp) no-repeat center center/cover;
-    min-height: 100vh;
+    max-height: 100%;
 }
 
 #homepage {
@@ -10,7 +10,7 @@ body {
     width: 100%;
     font-family: "Kaushan Script", cursive;
     min-height: 62vh;
-    border-radius: 30px;
+    border-radius: 10px;
 }
 
 
@@ -323,7 +323,7 @@ h1 {
     }
 
     #homepage {
-        min-height: 85vh;
+        min-height: 90vh;
     }
 
     #start-button {
