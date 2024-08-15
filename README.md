@@ -198,7 +198,8 @@ Full testing was performed on the following devices:
 | --- | --- | --- | --- | --- |
 | The Start Button | Button starts the quiz game | Clicked button | Quiz Game Starts | Pass |
 | The Start Button | Button hides intro text content and shows quiz game content| Clicked on the button | Intro text content hidden,quiz game content shown | Pass |
-| Answer Buttons | Buttons recognise correct and incorrect answers | Clicked on button| Button turns green if answer is correct,wrong if answer is incorrect and respective alerts are shown | Pass |
+| Answer Buttons | Buttons recognise correct and incorrect answers | Clicked on button | Button turns green if answer is correct,wrong if answer is incorrect and respective alerts are shown | Pass |
+| Answer Buttons | Buttons not clickables after first answer is submitted | Submit first answer and try to click on another one | Buttons do not respond and user is not allowed to submit another answer for the same question | Pass |
 | Next Button | Button shows next question when pressed | Clicked on the button | Next question shows | Pass |
 | Quiz questions showing correctly | Each quiz question need to show in random order with respective answer options and quiz image | Press start or next button | The quiz questions are showing in random order with respective image and answer options | Pass |
 | Score Tracker | Keeps track of correct and incorrect answers submit by the user | Answer correct or incorrect answer | Score tracker counter updated | Pass |
@@ -250,3 +251,5 @@ To clone the repository:
 I want to credit and say thank you to the Code Institute tutoring team for helping through the realization of this project anytime i found some issues with my code. All the tutors have been keen on helping and their help was useful to debug and complete this project.
 
 I want to say thank you to my mentor Jubril for advice me through the realization of this project and for suggesting on using SweetAlert to make my alert look better. 
+
+Al the pictures i have used in this project are from the [Pexels](https://www.pexels.com/) website.
