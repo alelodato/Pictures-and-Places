@@ -248,8 +248,6 @@ To clone the repository:
 
 ## CREDITS
 
-I want to credit and say thank you to the Code Institute tutoring team for helping through the realization of this project anytime i found some issues with my code. All the tutors have been keen on helping and their help was useful to debug and complete this project.
-
-I want to say thank you to my mentor Jubril for advice me through the realization of this project and for suggesting on using SweetAlert to make my alert look better. 
+I want to say thank you to my mentor Jubril for advice me through the realization of this project and for suggesting on using [SweetAlert](https://sweetalert2.github.io/) to make the game alerts look better. 
 
 Al the pictures i have used in this project are from the [Pexels](https://www.pexels.com/) website.
