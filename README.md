@@ -13,7 +13,7 @@ Users on this website can participate to a quiz game showing 10 questions with a
 
 As the website is made for a geography quiz game, i wanted to give it a light and colourful mood, but still keeping it simple to provide a good user experience.
 
-* For the quiz introduction, questions, score tracker and final message text content i have used the colour  #fafafa;
+* For the quiz introduction, questions, score tracker, pop up alert background and final message text content i have used the colour  #fafafa;
     
 * For the cover text i have used the colour rgb(22, 97, 72,0.9);
 
@@ -30,9 +30,9 @@ As the website is made for a geography quiz game, i wanted to give it a light an
 All the fonts are imported from Google Fonts.
 The Fonts imported are "Kaushan Script" and "Shadows Into Light".
 
-* The font "Kaushan Script" is the font i have used for the heading of the game website. Is a font that looks great for a headline,is in cursive to make it a bit lighter and i think goes well with the mood of a geography quiz game;
+* The font "Shadows Into Light" is the font i have used for the heading of the game website. Is a font that looks great for a headline,is in cursive to make it a bit lighter and i think goes well with the mood of a geography quiz game;
 
-* The font "Shadows Into Light" is the font i used for the pages paragraphs,the questions,the answers and the button text content,it is as the headline font very light, and it goes well with the mood i wanted to give to the quiz game.
+* The font "Kaushan Script" is the font i used for the pages paragraphs,the questions,the answers, the pop up alert and the button text content,it is as the headline font very light, and it goes well with the mood i wanted to give to the quiz game.
 
 ### IMAGERY AND VIDEOS
 
@@ -124,6 +124,8 @@ This message is made to let the user know that the quiz has been completed, and 
 * [GitPod](https://gitpod.io/) - IDE used to create the site.
 
 * [Google Fonts](https://fonts.google.com/) - To import the fonts used on the website.
+
+* [Sweet Alerts](https://sweetalert2.github.io/) - To customise the pop up alert of the quiz game.
 
 * [Google Developer Tools](https://developers.google.com/web/tools) - To troubleshoot and test features, solve issues with responsiveness and styling.
 
@@ -245,10 +247,6 @@ To clone the repository:
 
 ## CREDITS
 
-I want to credit and say thank you to the Code Institute tutoring team for helping through the realization of this project anytime i found some issues with my code. All the tutors have been keen on helping and their help was useful to complete this project. 
+I want to credit and say thank you to the Code Institute tutoring team for helping through the realization of this project anytime i found some issues with my code. All the tutors have been keen on helping and their help was useful to debug and complete this project.
 
-All the icons used for the toggle menu,the reasons section,the footer and the website favicon,were taken from the [Font Awesome](https://fontawesome.com/) website;
-
-The font used in the website,"Bebas Neue" and "Urbanist",were taken from [Google Font](https://fonts.google.com/);
-
-All the background images and the reasons section video,were taken from the [Pexels](https://www.pexels.com/) website.
+I want to say thank you to my mentor Jubril for advice me through the realization of this project and for suggesting on using SweetAlert to make my alert look better. 
