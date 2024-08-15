@@ -19,7 +19,7 @@ As the website is made for a geography quiz game, i wanted to give it a light an
 
 * For the buttons i have used the colour #000000 for the text content and #a8cccc for the background;
 
-* For the answers and all the other buttons text content i have used the colour #000000;
+* For the answers, the pop up alert and all the other buttons text content i have used the colour #000000;
 
 * For the answers buttons background colour i have used #1cd0b2;
 

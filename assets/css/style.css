@@ -10,6 +10,7 @@ body {
     width: 100%;
     font-family: "Kaushan Script", cursive;
     min-height: 62vh;
+    border-radius: 30px;
 }
 
 
@@ -133,6 +134,20 @@ h1 {
 
 #quiz-image img {
     width: 300px;
+    border-radius: 10px;
+}
+
+.swal2-popup {
+    font-family: "Kaushan Script", cursive;
+    font-size: 1rem;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.swal2-confirm {
+    font-family: "Kaushan Script", cursive;
+    background-color: #1cd0b2;
+    color: #000000;
 }
 
 /*Info message and Score Tracker*/
@@ -215,7 +230,7 @@ h1 {
         height: 50px;
         width: 100px;
         margin: 10px;
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     #score{
@@ -223,7 +238,8 @@ h1 {
     }
 
     #quiz-end {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
+        margin-top: 100px;
     }
 
 }
