@@ -1,7 +1,7 @@
 /* Body And Intro Text Content */
 body {
     background: url(../images/quiz-img/homepage-background.webp) no-repeat center center/cover;
-    max-height: 100%;
+    height: 100vh;
 }
 
 #homepage {
@@ -171,6 +171,7 @@ h1 {
     position: absolute;
     font-size: 1rem;
     color:#fafafa;
+    text-align: left;
 }
 
 .scores {
@@ -199,10 +200,6 @@ h1 {
 
 /*Media query for tablets and larger (768px and up)*/
 @media screen and (min-width:768px) {
-    #homepage-body {
-        min-height: 100vh;
-    }
-    
     #homepage {
         min-height: 75vh;
     }
@@ -260,6 +257,7 @@ h1 {
 @media screen and (min-width:992px) {
     #homepage {
         min-height: 80vh;
+        position: relative;
     }
 
     h1 {
@@ -312,6 +310,10 @@ h1 {
 /*Media query for computers,large laptops and upwards (1200px and higher)*/
 @media screen and (min-width:1200px) {
 
+    body {
+        height:100%;
+    }
+
     h1 {
     font-size: 5rem;
     margin-top: 50px;
@@ -324,6 +326,8 @@ h1 {
 
     #homepage {
         min-height: 90vh;
+        position: relative;
+        bottom: 20px;
     }
 
     #start-button {
