@@ -258,6 +258,10 @@ h1 {
 
 /*Media query for laptops and larger screens (992 and up)*/
 @media screen and (min-width:992px) {
+    #homepage {
+        min-height: 80vh;
+    }
+
     h1 {
         font-size: 6rem;
     }
@@ -319,7 +323,7 @@ h1 {
     }
 
     #homepage {
-        min-height: 95vh;
+        min-height: 85vh;
     }
 
     #start-button {
