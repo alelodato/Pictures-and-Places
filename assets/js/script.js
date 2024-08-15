@@ -113,9 +113,19 @@ function checkAnswer(event) {
     selectedAnswer.style.backgroundColor = "lightgreen";
     // Increments score tracker for correct answers
     incrementCorrect();
-    alert(`Correct! ${questionsInfo}`);
+    Swal.fire({
+      title: 'Correct!',
+      text: (` ${questionsInfo}`),
+      icon: 'success',
+      confirmButtonText: 'OK'
+  });
   } else {selectedAnswer.style.backgroundColor = "red";
-    alert(`Sorry! That's not the correct answer...${questionsInfo}`);
+    Swal.fire({
+      title: "Sorry! That's not the correct answer...",
+      text: (`${questionsInfo}`),
+      icon: 'error',
+      confirmButtonText: 'OK'
+  });
     let correctAnswer = document.querySelector("[data-correct='true']");
     correctAnswer.style.backgroundColor = "lightgreen";
     // Increments score tracker for incorrect answers 

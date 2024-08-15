@@ -1,5 +1,5 @@
 /* Homepage */
-#homepage-body {
+body {
     background: url(../images/quiz-img/homepage-background.webp) no-repeat center center/cover;
     min-height: 100vh;
 }
@@ -9,7 +9,7 @@
     background-color: rgb(22, 97, 72,0.9);
     width: 100%;
     font-family: "Kaushan Script", cursive;
-    min-height: 60vh;
+    min-height: 62vh;
 }
 
 
@@ -178,7 +178,6 @@ h1 {
     
     #homepage {
         min-height: 75vh;
-        margin-top: 0;
     }
 
     h1 {
@@ -194,7 +193,7 @@ h1 {
     }
 
     #answer-buttons button {
-        font-size: 2rem;
+        font-size: 1.5rem;
         width: 80%;
     }
 
@@ -231,7 +230,6 @@ h1 {
 
 /*Media query for laptops and larger screens (992 and up)*/
 @media screen and (min-width:992px) {
-    
     h1 {
         font-size: 6rem;
     }
@@ -301,7 +299,7 @@ h1 {
     }
 
     #homepage {
-        min-height: 90vh;
+        min-height: 95vh;
     }
 
     #start-button {
