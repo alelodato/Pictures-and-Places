@@ -1,17 +1,17 @@
 /* Body And Intro Text Content */
 body {
-  background: url(../images/quiz-img/homepage-background.webp) no-repeat center
+  background: url(../images/quiz-img/background-homepage.png) no-repeat center
     center/cover;
   min-height: 100vh;
 }
 
 #homepage {
   text-align: center;
-  background-color: rgb(22, 97, 72, 0.9);
   width: 100%;
   font-family: "Quicksand", sans-serif;
   min-height: 62vh;
   border-radius: 10px;
+  background: radial-gradient(#000000ad, #00000000);
 }
 
 h1 {
@@ -39,9 +39,10 @@ h1 {
 #start-button {
   height: 70px;
   width: 150px;
-  border-radius: 15px;
+  border-radius: 25px;
   margin-bottom: 20px;
-  background-color: #a8cccc;
+  background-color: white;
+  border: none;
   color: #000000;
   font-size: 1.3rem;
   font-family: "Quicksand", sans-serif;
@@ -74,7 +75,8 @@ h1 {
   width: 80px;
   border-radius: 15px;
   margin: 10px 10px 10px 220px;
-  background-color: #a8cccc;
+  background-color: white;
+  border: none;
   color: #000000;
   font-size: 1rem;
   font-family: "Quicksand", sans-serif;
@@ -204,11 +206,11 @@ h1 {
   }
 
   h1 {
-    font-size: 5rem;
+    font-size: 3rem;
   }
 
   #intro-text p {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   #quiz-image img {
@@ -262,9 +264,9 @@ h1 {
   }
 
   #start-button {
-    height: 80px;
-    width: 160px;
-    font-size: 1.7rem;
+    height: 50px;
+    width: 100px;
+    font-size: 1rem;
   }
 
   #question-container {
@@ -310,7 +312,7 @@ h1 {
   }
 
   h1 {
-    font-size: 5rem;
+    font-size: 3rem;
     margin-top: 50px;
     margin-bottom: 20px;
   }
@@ -320,9 +322,7 @@ h1 {
   }
 
   #homepage {
-    min-height: 90vh;
     position: relative;
-    bottom: 20px;
   }
 
   #start-button {
