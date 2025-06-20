@@ -1,391 +1,384 @@
 /* Body And Intro Text Content */
 body {
-    background: url(../images/quiz-img/homepage-background.webp) no-repeat center center/cover;
-    min-height: 100vh;
+  background: url(../images/quiz-img/homepage-background.webp) no-repeat center
+    center/cover;
+  min-height: 100vh;
 }
 
 #homepage {
-    text-align: center;
-    background-color: rgb(22, 97, 72,0.9);
-    width: 100%;
-    font-family: "Kaushan Script", cursive;
-    min-height: 62vh;
-    border-radius: 10px;
+  text-align: center;
+  background-color: rgb(22, 97, 72, 0.9);
+  width: 100%;
+  font-family: "Quicksand", sans-serif;
+  min-height: 62vh;
+  border-radius: 10px;
 }
 
-
 h1 {
-    font-family: "Shadows Into Light", cursive;
-    font-size: 3rem;
-    color: #fafafa;
-    margin-top: 50px;
-    margin-bottom: 20px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 3rem;
+  color: #fafafa;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
 
 #intro-button {
-    font-family: "Kaushan Script", cursive;
+  font-family: "Quicksand", sans-serif;
 }
 
 #intro-text {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 #intro {
-    font-size: 2rem;
-    color: #fafafa;
+  font-size: 2rem;
+  color: #fafafa;
 }
 
 /*Start Button*/
 #start-button {
-    height: 70px;
-    width: 150px;
-    border-radius: 15px;
-    margin-bottom: 20px;
-    background-color: #a8cccc;
-    color: #000000;
-    font-size: 1.3rem;
-    font-family: "Kaushan Script", cursive;
+  height: 70px;
+  width: 150px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  background-color: #a8cccc;
+  color: #000000;
+  font-size: 1.3rem;
+  font-family: "Quicksand", sans-serif;
 }
 
 #start-button:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 /* Quiz Game Content */
 #next {
-    height: 40px;
-    width: 80px;
-    border-radius: 15px;
-    margin: 10px 10px 10px 220px;
-    background-color: #a8cccc;
-    color: #000000;
-    font-size: 1rem;
-    font-family: "Kaushan Script", cursive;
+  height: 40px;
+  width: 80px;
+  border-radius: 15px;
+  margin: 10px 10px 10px 220px;
+  background-color: #a8cccc;
+  color: #000000;
+  font-size: 1rem;
+  font-family: "Quicksand", sans-serif;
 }
 
 /*Next Button*/
 #next:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 /*Finish Button*/
 #results {
-    height: 40px;
-    width: 80px;
-    border-radius: 15px;
-    margin: 10px 10px 10px 220px;
-    background-color: #a8cccc;
-    color: #000000;
-    font-size: 1rem;
-    font-family: "Kaushan Script", cursive;
+  height: 40px;
+  width: 80px;
+  border-radius: 15px;
+  margin: 10px 10px 10px 220px;
+  background-color: #a8cccc;
+  color: #000000;
+  font-size: 1rem;
+  font-family: "Quicksand", sans-serif;
 }
 
 #results:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 /*Play Again Button*/
 #restart {
-    height: 45px;
-    width: 90px;
-    border-radius: 15px;
-    margin: 10px 10px 10px 220px;
-    background-color: #a8cccc;
-    color: #000000;
-    font-size: 0.8rem;
-    font-family: "Kaushan Script", cursive;
+  height: 45px;
+  width: 90px;
+  border-radius: 15px;
+  margin: 10px 10px 10px 220px;
+  background-color: #a8cccc;
+  color: #000000;
+  font-size: 0.8rem;
+  font-family: "Quicksand", sans-serif;
 }
 
 #restart:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 /*Question*/
 #question-container {
-    text-align: center;
-    font-size: 1.5rem;
-    color: #fafafa;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #fafafa;
 }
 
 /*Answer Buttons and Quiz Image Section*/
 #answers-image {
-    display: flex;
-    flex-direction: column-reverse;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 /*Answer Buttons*/
 #answer-buttons {
-    margin: 5px;
+  margin: 5px;
 }
 
 #answer-buttons button {
-    width: 90%;
-    padding: 5px 0.5rem;
-    border: solid #000000 1px;
-    border-radius: 3rem;
-    font-size: 1rem;
-    font-family: "Kaushan Script", cursive;
-    background-color: #1cd0b2;
-    margin: 5px;
-    color: #000000;
+  width: 90%;
+  padding: 5px 0.5rem;
+  border: solid #000000 1px;
+  border-radius: 3rem;
+  font-size: 1rem;
+  font-family: "Quicksand", sans-serif;
+  background-color: #1cd0b2;
+  margin: 5px;
+  color: #000000;
 }
 
 #answer-buttons button:hover {
-    cursor: pointer;
-    background-color: #e2f0ed;
+  cursor: pointer;
+  background-color: #e2f0ed;
 }
 
 /*Quiz Images*/
-#quiz-image{
-    margin-top: 10px;
+#quiz-image {
+  margin-top: 10px;
 }
 
 #quiz-image img {
-    width: 300px;
-    border-radius: 10px;
+  width: 300px;
+  border-radius: 10px;
 }
 
 /*Pop Up Alert*/
 .swal2-popup {
-    font-family: "Kaushan Script", cursive;
-    font-size: 1rem;
-    color: #000000;
-    background-color: #ffffff;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  color: #000000;
+  background-color: #ffffff;
 }
 
 .swal2-confirm {
-    font-family: "Kaushan Script", cursive;
-    background-color: #1cd0b2;
-    color: #000000;
-    border: solid #000000 1px;
+  font-family: "Quicksand", sans-serif;
+  background-color: #1cd0b2;
+  color: #000000;
+  border: solid #000000 1px;
 }
 
 /*Info message and Score Tracker*/
 #info {
-    background-color: #fafafa;
-    height: 70%;
-    width: 70%;
+  background-color: #fafafa;
+  height: 70%;
+  width: 70%;
 }
 
 /*Score Tracker*/
 #score {
-    position: absolute;
-    font-size: 1rem;
-    color:#fafafa;
-    text-align: left;
+  position: absolute;
+  font-size: 1rem;
+  color: #fafafa;
+  text-align: left;
 }
 
 .scores {
-    margin: 3px;
+  margin: 3px;
 }
 
 /*Class assigned to elements that need to be hidden in certain moments of the quiz game*/
 .hide {
-     display: none;
+  display: none;
 }
 
 /*End Of Game Message*/
 #quiz-end {
-    color: #fafafa;
-    font-size: 1.5rem;
+  color: #fafafa;
+  font-size: 1.5rem;
 }
 
 /*Media query for large or landscape phones (570px and up)*/
-@media screen and (min-width:570px){
-
-    #next {
-        margin: 10px;
-    }
-
+@media screen and (min-width: 570px) {
+  #next {
+    margin: 10px;
+  }
 }
 
 /*Media query for tablets and larger (768px and up)*/
-@media screen and (min-width:768px) {
-    #homepage {
-        min-height: 75vh;
-    }
+@media screen and (min-width: 768px) {
+  #homepage {
+    min-height: 75vh;
+  }
 
-    h1 {
-        font-size: 5rem;
-    }
-    
-    #intro-text p {
-        font-size: 3rem;
-    }
+  h1 {
+    font-size: 5rem;
+  }
 
-    #quiz-image img {
-        width: 600px;
-    }
+  #intro-text p {
+    font-size: 3rem;
+  }
 
-    #answer-buttons button {
-        font-size: 1.3rem;
-        width: 80%;
-    }
+  #quiz-image img {
+    width: 600px;
+  }
 
-    #next {
-        height: 50px;
-        width: 100px;
-        margin: 10px;
-        font-size: 1.5rem;
-    }
+  #answer-buttons button {
+    font-size: 1.3rem;
+    width: 80%;
+  }
 
-    #results {
-        height: 50px;
-        width: 100px;
-        margin: 10px;
-        font-size: 1.5rem;
-    }
+  #next {
+    height: 50px;
+    width: 100px;
+    margin: 10px;
+    font-size: 1.5rem;
+  }
 
-    #restart {
-        height: 50px;
-        width: 100px;
-        margin: 10px;
-        font-size: 1rem;
-    }
+  #results {
+    height: 50px;
+    width: 100px;
+    margin: 10px;
+    font-size: 1.5rem;
+  }
 
-    #score{
-        font-size: 1.3rem;
-    }
+  #restart {
+    height: 50px;
+    width: 100px;
+    margin: 10px;
+    font-size: 1rem;
+  }
 
-    #quiz-end {
-        font-size: 1.5rem;
-        margin-top: 100px;
-    }
+  #score {
+    font-size: 1.3rem;
+  }
 
+  #quiz-end {
+    font-size: 1.5rem;
+    margin-top: 100px;
+  }
 }
 
 /*Media query for laptops and larger screens (992 and up)*/
-@media screen and (min-width:992px) {
-    #homepage {
-        min-height: 80vh;
-    }
+@media screen and (min-width: 992px) {
+  #homepage {
+    min-height: 80vh;
+  }
 
-    h1 {
-        font-size: 6rem;
-    }
+  h1 {
+    font-size: 6rem;
+  }
 
-    #start-button {
-        height: 80px;
-        width: 160px;
-        font-size: 1.7rem;
-    }
+  #start-button {
+    height: 80px;
+    width: 160px;
+    font-size: 1.7rem;
+  }
 
-    #question-container {
-        font-size: 2rem;
-    }
+  #question-container {
+    font-size: 2rem;
+  }
 
-    #quiz-image img {
-        width: 600px;
-        margin-top: 10px;
-    }
+  #quiz-image img {
+    width: 600px;
+    margin-top: 10px;
+  }
 
-    #score {
-        font-size: 1.5rem;
-    }
+  #score {
+    font-size: 1.5rem;
+  }
 
-    #next {
-        height: 60px;
-        width: 120px;
-        font-size: 1.5rem;
-    }
+  #next {
+    height: 60px;
+    width: 120px;
+    font-size: 1.5rem;
+  }
 
-    #results {
-        height: 60px;
-        width: 120px;
-        font-size: 1.5rem;
-    }
+  #results {
+    height: 60px;
+    width: 120px;
+    font-size: 1.5rem;
+  }
 
-    #restart {
-        height: 60px;
-        width: 120px;
-        font-size: 1.3rem;
-    }
+  #restart {
+    height: 60px;
+    width: 120px;
+    font-size: 1.3rem;
+  }
 
-    #quiz-end {
-        font-size: 2rem;
-    }
-
+  #quiz-end {
+    font-size: 2rem;
+  }
 }
 
 /*Media query for computers,large laptops and upwards (1200px and higher)*/
-@media screen and (min-width:1200px) {
+@media screen and (min-width: 1200px) {
+  body {
+    min-height: 100%;
+  }
 
-    body {
-        min-height:100%;
-    }
-
-    h1 {
+  h1 {
     font-size: 5rem;
     margin-top: 50px;
     margin-bottom: 20px;
-    }
+  }
 
-    #intro-text {
-        margin-bottom: 20px;
-    }
+  #intro-text {
+    margin-bottom: 20px;
+  }
 
-    #homepage {
-        min-height: 90vh;
-        position: relative;
-        bottom: 20px;
-    }
+  #homepage {
+    min-height: 90vh;
+    position: relative;
+    bottom: 20px;
+  }
 
-    #start-button {
-        height: 85px;
-        width: 170px;
-        border-radius: 15px;
-        margin-bottom: 20px;
-    }
+  #start-button {
+    height: 85px;
+    width: 170px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+  }
 
-    #next {
-        height: 70px;
-        width: 140px;
-        border-radius: 15px;
-        margin: 0;
-    }
+  #next {
+    height: 70px;
+    width: 140px;
+    border-radius: 15px;
+    margin: 0;
+  }
 
-    #results {
-        height: 80px;
-        width: 160px;
-    }
+  #results {
+    height: 80px;
+    width: 160px;
+  }
 
-    #restart {
-        height: 80px;
-        width: 160px;
-    }
+  #restart {
+    height: 80px;
+    width: 160px;
+  }
 
-    #question-container {
-        font-size: 2rem;
-        padding-top: 10px;
-    }
+  #question-container {
+    font-size: 2rem;
+    padding-top: 10px;
+  }
 
-    #answers-image {
-        display: flex;
-        flex-direction: row;
-    }
+  #answers-image {
+    display: flex;
+    flex-direction: row;
+  }
 
-    #answer-buttons {
-        width: 45%;
-        margin: 0;
-    }
+  #answer-buttons {
+    width: 45%;
+    margin: 0;
+  }
 
-    #answer-buttons button {
-        width: 90%;
-        display: block;
-        padding: 5px 0.5rem;
-        border-radius: 3rem;
-        font-size: 1.5rem;
-        margin: 3rem 0;
-    }
+  #answer-buttons button {
+    width: 90%;
+    display: block;
+    padding: 5px 0.5rem;
+    border-radius: 3rem;
+    font-size: 1.5rem;
+    margin: 3rem 0;
+  }
 
-    #quiz-image{
-        width: 45%;
-        margin-top: 20px;
-    }
+  #quiz-image {
+    width: 45%;
+    margin-top: 20px;
+  }
 
-    #quiz-image img {
-        height: 400px;
-    }
+  #quiz-image img {
+    height: 400px;
+  }
 }
-
-
