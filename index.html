@@ -1,25 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--SweetAlert-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10" />
     <!--Google Fonts-->
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
     <!--Stylesheets-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <!--Favicon-->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
     <title>Pictures And Places</title>
-</head>
-<body>
+  </head>
+  <body>
+    <div class="stars"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
     <section id="homepage">
-        <div class="title-intro">
+      <div class="title-intro-start">
         <h1 id="title">PICTURES AND PLACES</h1>
         <div id="intro-text">
           <div id="intro">
@@ -27,36 +55,44 @@
             <p>How many do you know?</p>
           </div>
         </div>
-        </div>
-            <div id="question-container" class="hide">Question</div>
-        <div id="answers-image">
-            <div id="answer-buttons" class="hide">
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
-            </div>
-            <div id="quiz-image"></div>
-        </div>
-        <!--Info Div-->
-            <div id="info" class="hide"></div>
-            <!--Quiz End Message-->
-        <div id="quiz-end" class="hide"><p>Congratulations you completed the quiz!</p>
-            <p>Below you'll find your results, click the button if you wanna play again!</p>
-        </div>
-        <!-- Score Tracker-->
-        <div id="score" class="hide">
-            <p class="scores">Correct Answers:<span id="right">0</span></p>
-            <p class="scores">Incorrect Answers:<span id="wrong">0</span></p>
-        </div>
-        <!--Buttons-->
         <div id="game-start"><button id="start-button">Start Game</button></div>
-        <div id="next-button"><button id="next" class="hide">Next</button></div>
-        <div id="results-button"><button id="results" class="hide">Finish</button></div>
-        <div id="restart-button"><button id="restart" class="hide">Play Again</button></div>
-    </section>    
+      </div>
+      <div id="question-container" class="hide">Question</div>
+      <div id="answers-image">
+        <div id="answer-buttons" class="hide">
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+        </div>
+        <div id="quiz-image"></div>
+      </div>
+      <!--Info Div-->
+      <div id="info" class="hide"></div>
+      <!--Quiz End Message-->
+      <div id="quiz-end" class="hide">
+        <p>Congratulations you completed the quiz!</p>
+        <p>
+          Below you'll find your results, click the button if you wanna play
+          again!
+        </p>
+      </div>
+      <!-- Score Tracker-->
+      <div id="score" class="hide">
+        <p class="scores">Correct Answers:<span id="right">0</span></p>
+        <p class="scores">Incorrect Answers:<span id="wrong">0</span></p>
+      </div>
+      <!--Buttons-->
+      <div id="next-button"><button id="next" class="hide">Next</button></div>
+      <div id="results-button">
+        <button id="results" class="hide">Finish</button>
+      </div>
+      <div id="restart-button">
+        <button id="restart" class="hide">Play Again</button>
+      </div>
+    </section>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/questions.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.4/dist/sweetalert2.all.min.js"></script>
-</body>
+  </body>
 </html>

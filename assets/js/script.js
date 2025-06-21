@@ -5,6 +5,7 @@
 const title = document.getElementById('title');
 const intro = document.getElementById('intro');
 const startButton = document.getElementById("start-button");
+const start = document.querySelector('.title-intro-start');
 // Questions, answers buttons, quiz images, next button and score tracker variables
 const questionContainer = document.getElementById('question-container');
 const quizImage = document.getElementById('quiz-image');
@@ -33,9 +34,7 @@ restartButton.addEventListener('click', startGame);
  */
 function startGame() {
   // Hide title,intro message and start button, to make space for the quiz game content
-  title.classList.add('hide');
-  intro.classList.add('hide');
-  startButton.classList.add('hide');
+  start.classList.add('hide');
   // Remove 'hide' class from quiz content to show when game starts
   questionContainer.classList.remove('hide');
   answerButtons.classList.remove('hide');
