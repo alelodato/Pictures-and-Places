@@ -1,3 +1,5 @@
+@keyframes scale-up-center-normal {0% { transform: scale(0.5); } 100% { transform: scale(1);} }
+@keyframes rotate-center-normal {0% { transform: rotate(0); } 100% { transform: rotate(360deg);} }
 /* Body And Intro Text Content */
 * {
   margin: 0;
@@ -94,6 +96,10 @@ body {
     27vw 88vh 1px white, 35vw 72vh 2px white, 43vw 85vh 1px white,
     51vw 92vh 2px white, 59vw 78vh 1px white;
   animation: twinkle 6s infinite linear reverse;
+}
+
+.earth-icon img {
+  animation: rotate-center-normal 3s ease 2s infinite normal none;
 }
 
 #homepage {
@@ -418,6 +424,7 @@ h1 {
 
   #start-button {
     margin-bottom: 20px;
+    animation: scale-up-center-normal 1s ease 0s 1 normal none; 
   }
 
   #next {
