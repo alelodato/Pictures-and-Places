@@ -133,14 +133,14 @@ h1 {
 
 /*Start Button*/
 #start-button {
-  height: 70px;
-  width: 150px;
+  height: 35px;
+  width: 90px;
   border-radius: 25px;
   margin-bottom: 20px;
   background-color: white;
   border: none;
   color: #000000;
-  font-size: 1.3rem;
+  font-size: 0.8rem;
   font-family: "Quicksand", sans-serif;
 }
 
@@ -149,32 +149,35 @@ h1 {
 }
 
 /* Quiz Game Content */
-#next {
-  height: 40px;
-  width: 80px;
-  border-radius: 15px;
-  margin: 10px 10px 10px 220px;
-  background-color: #a8cccc;
-  color: #000000;
-  font-size: 1rem;
-  font-family: "Quicksand", sans-serif;
-}
 
 /*Next Button*/
+
+#next {
+  height: 35px;
+  width: 90px;
+  border-radius: 25px;
+  margin: 10px 10px 10px 220px;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 0.8rem;
+  font-family: "Quicksand", sans-serif;
+  border: none;
+}
+
 #next:hover {
   cursor: pointer;
 }
 
 /*Finish Button*/
 #results {
-  height: 40px;
-  width: 80px;
-  border-radius: 15px;
+  height: 35px;
+  width: 90px;
+  border-radius: 25px;
   margin: 10px 10px 10px 220px;
   background-color: white;
   border: none;
   color: #000000;
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-family: "Quicksand", sans-serif;
 }
 
@@ -184,9 +187,9 @@ h1 {
 
 /*Play Again Button*/
 #restart {
-  height: 45px;
+  height: 35px;
   width: 90px;
-  border-radius: 15px;
+  border-radius: 25px;
   margin: 10px 10px 10px 220px;
   background-color: #a8cccc;
   color: #000000;
@@ -419,7 +422,7 @@ h1 {
   }
 
   .title-intro-start {
-    padding-top: 150px;
+    padding-top: 120px;
   }
 
   #start-button {
