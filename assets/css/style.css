@@ -483,12 +483,12 @@ h1 {
   }
 
   #answer-buttons button {
-    width: 90%;
+    width: 70%;
     display: block;
     padding: 5px 0.5rem;
-    border-radius: 3rem;
+    border-radius: 15px;
     font-size: 1.5rem;
-    margin: 3rem 0;
+    margin: 3rem 1.5rem;
   }
 
   #quiz-image {
