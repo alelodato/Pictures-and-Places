@@ -1,5 +1,7 @@
 @keyframes scale-up-center-normal {0% { transform: scale(0.5); } 100% { transform: scale(1);} }
 @keyframes rotate-center-normal {0% { transform: rotate(0); } 100% { transform: rotate(360deg);} }
+@keyframes slide-right-normal {0% { transform: translateX(0); } 100% { transform: translateX(100px);} }
+@keyframes vibrate-1-normal {0% { transform: translate(0); } 20% { transform: translate(-2px, 2px); } 40% { transform: translate(-2px, -2px); } 60% { transform: translate(2px, 2px); } 80% { transform: translate(2px, -2px); } 100% { transform: translate(0);} }
 /* Body And Intro Text Content */
 * {
   margin: 0;
@@ -98,8 +100,16 @@ body {
   animation: twinkle 6s infinite linear reverse;
 }
 
+.plane-icon img { 
+  animation: slide-right-normal 3s cubic-bezier(0.895, 0.030, 0.685, 0.220) 2s infinite normal none; 
+}
+
 .earth-icon img {
   animation: rotate-center-normal 3s ease 2s infinite normal none;
+}
+
+.monument-valley-icon img, .rialto-icon img, .shanghai-icon img, .canyon-icon img { 
+    animation: vibrate-1-normal 3s linear 2s infinite normal none; 
 }
 
 #homepage {
@@ -114,7 +124,7 @@ h1 {
   font-family: "Quicksand", sans-serif;
   font-size: 3rem;
   color: #fafafa;
-  margin-top: 50px;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
@@ -146,6 +156,16 @@ h1 {
 
 #start-button:hover {
   cursor: pointer;
+}
+
+.homepage-icons-top {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.homepage-icons {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 /* Quiz Game Content */
@@ -359,8 +379,12 @@ h1 {
     min-height: 80vh;
   }
 
+  .title-intro-start {
+    padding-top: 60px;
+  }
+
   h1 {
-    font-size: 6rem;
+    font-size: 3rem;
   }
 
   #start-button {
@@ -409,8 +433,7 @@ h1 {
 @media screen and (min-width: 1200px) {
 
   h1 {
-    font-size: 3rem;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-bottom: 20px;
   }
 
@@ -420,10 +443,6 @@ h1 {
 
   #homepage {
     position: relative;
-  }
-
-  .title-intro-start {
-    padding-top: 120px;
   }
 
   #start-button {
