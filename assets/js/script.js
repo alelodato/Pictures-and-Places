@@ -17,8 +17,7 @@ const getResults = document.getElementById('results');
 // End game and restart button variable
 const endMessage = document.getElementById('quiz-end');
 const restartButton = document.getElementById('restart');
-// Background image, to switch on tablet and laptop screens when game starts
-let backgroundImage = document.getElementsByClassName('background-img');
+const gameBackground = document.getElementById('homepage');
 // Variables for shuffled questions and the current question index
 let shuffledQuestions, currentQuestionIndex;
 // Variable to get the questions info text content
@@ -35,8 +34,7 @@ restartButton.addEventListener('click', startGame);
  * Function that starts the game when start button clicked
  */
 function startGame() {
-  //Switch background image
-  backgroundImage.src = 'mobile-background.jpeg';
+  gameBackground.style.backgroundColor = 'rgb(0 0 0 / 66%)';
   // Hide title,intro message and start button, to make space for the quiz game content
   start.classList.add('hide');
   // Remove 'hide' class from quiz content to show when game starts

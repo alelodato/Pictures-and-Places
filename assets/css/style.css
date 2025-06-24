@@ -20,7 +20,7 @@ body {
   width: 100%;
   font-family: "Quicksand", sans-serif;
   min-height: 100vh;
-  background: #000000ad;
+  background: radial-gradient(#000000ed, #00000052);
 }
 
 h1 {
@@ -230,11 +230,6 @@ h1 {
   .background-img {
     background: url(/assets/images/quiz-img/homepage-background.png) no-repeat center center/cover;
   }
-
-  #homepage {
-    background: radial-gradient(#000000d6, transparent);
-  }
-  
 
   h1 {
     font-size: 3rem;
