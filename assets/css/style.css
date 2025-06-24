@@ -7,9 +7,12 @@
 
 body {
   min-height: 100vh;
-  background: url(/assets/images/quiz-img/mobile-background.jpeg) no-repeat center center/cover;
   overflow: hidden;
   width: 100%;
+}
+
+.background-img {
+  background: url(/assets/images/quiz-img/mobile-background.png) no-repeat center center/cover;
 }
 
 #homepage {
@@ -224,7 +227,7 @@ h1 {
 
 /*Media query for tablets and larger (768px and up)*/
 @media screen and (min-width: 768px) {
-  body{
+  .background-img {
     background: url(/assets/images/quiz-img/homepage-background.png) no-repeat center center/cover;
   }
 
