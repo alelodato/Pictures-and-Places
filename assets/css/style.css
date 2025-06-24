@@ -1,7 +1,3 @@
-@keyframes scale-up-center-normal {0% { transform: scale(0.5); } 100% { transform: scale(1);} }
-@keyframes rotate-center-normal {0% { transform: rotate(0); } 100% { transform: rotate(360deg);} }
-@keyframes slide-right-normal {0% { transform: translateX(0); } 100% { transform: translateX(100px);} }
-@keyframes vibrate-1-normal {0% { transform: translate(0); } 20% { transform: translate(-2px, 2px); } 40% { transform: translate(-2px, -2px); } 60% { transform: translate(2px, 2px); } 80% { transform: translate(2px, -2px); } 100% { transform: translate(0);} }
 /* Body And Intro Text Content */
 * {
   margin: 0;
@@ -11,117 +7,24 @@
 
 body {
   min-height: 100vh;
-  background: linear-gradient(to bottom, #0b0b2b, #1b2735 70%, #090a0f);
+  background: url(/assets/images/quiz-img/mobile-background.jpeg) no-repeat center center/cover;
   overflow: hidden;
-}
-
-.stars {
-  width: 1px;
-  height: 1px;
-  position: absolute;
-  background: white;
-  box-shadow: 2vw 5vh 2px white, 10vw 8vh 2px white, 15vw 15vh 1px white,
-    22vw 22vh 1px white, 28vw 12vh 2px white, 32vw 32vh 1px white,
-    38vw 18vh 2px white, 42vw 35vh 1px white, 48vw 25vh 2px white,
-    53vw 42vh 1px white, 58vw 15vh 2px white, 63vw 38vh 1px white,
-    68vw 28vh 2px white, 73vw 45vh 1px white, 78vw 32vh 2px white,
-    83vw 48vh 1px white, 88vw 20vh 2px white, 93vw 52vh 1px white,
-    98vw 35vh 2px white, 5vw 60vh 1px white, 12vw 65vh 2px white,
-    18vw 72vh 1px white, 25vw 78vh 2px white, 30vw 85vh 1px white,
-    35vw 68vh 2px white, 40vw 82vh 1px white, 45vw 92vh 2px white,
-    50vw 75vh 1px white, 55vw 88vh 2px white, 60vw 95vh 1px white,
-    65vw 72vh 2px white, 70vw 85vh 1px white, 75vw 78vh 2px white,
-    80vw 92vh 1px white, 85vw 82vh 2px white, 90vw 88vh 1px white,
-    95vw 75vh 2px white;
-  animation: twinkle 8s infinite linear;
-}
-
-.shooting-star {
-  position: absolute;
-  width: 100px;
-  height: 2px;
-  background: linear-gradient(90deg, white, transparent);
-  animation: shoot 3s infinite ease-in;
-}
-
-.shooting-star:nth-child(1) {
-  top: 20%;
-  left: -100px;
-  animation-delay: 0s;
-}
-
-.shooting-star:nth-child(2) {
-  top: 35%;
-  left: -100px;
-  animation-delay: 1s;
-}
-
-.shooting-star:nth-child(3) {
-  top: 50%;
-  left: -100px;
-  animation-delay: 2s;
-}
-
-@keyframes twinkle {
-  0%,
-  100% {
-    opacity: 0.8;
-  }
-  50% {
-    opacity: 0.4;
-  }
-}
-
-@keyframes shoot {
-  0% {
-    transform: translateX(0) translateY(0) rotate(25deg);
-    opacity: 1;
-  }
-  100% {
-    transform: translateX(120vw) translateY(50vh) rotate(25deg);
-    opacity: 0;
-  }
-}
-
-/* Additional twinkling stars with different animation timing */
-.stars::after {
-  content: "";
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  background: white;
-  box-shadow: 8vw 12vh 2px white, 16vw 18vh 1px white, 24vw 25vh 2px white,
-    33vw 15vh 1px white, 41vw 28vh 2px white, 49vw 35vh 1px white,
-    57vw 22vh 2px white, 65vw 42vh 1px white, 73vw 28vh 2px white,
-    81vw 48vh 1px white, 89vw 32vh 2px white, 97vw 45vh 1px white,
-    3vw 68vh 2px white, 11vw 75vh 1px white, 19vw 82vh 2px white,
-    27vw 88vh 1px white, 35vw 72vh 2px white, 43vw 85vh 1px white,
-    51vw 92vh 2px white, 59vw 78vh 1px white;
-  animation: twinkle 6s infinite linear reverse;
-}
-
-.plane-icon img { 
-  animation: slide-right-normal 3s cubic-bezier(0.895, 0.030, 0.685, 0.220) 2s infinite normal none; 
-}
-
-.earth-icon img {
-  animation: rotate-center-normal 3s ease 2s infinite normal none;
-}
-
-.monument-valley-icon img, .rialto-icon img, .shanghai-icon img, .canyon-icon img { 
-    animation: vibrate-1-normal 3s linear 2s infinite normal none; 
+  width: 100%;
 }
 
 #homepage {
   text-align: center;
   width: 100%;
   font-family: "Quicksand", sans-serif;
-  min-height: 62vh;
-  border-radius: 10px;
+  min-height: 100vh;
+  background: #000000ad;
 }
 
 h1 {
-  font-family: "Quicksand", sans-serif;
+  font-family: "Roboto Flex", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
   font-size: 3rem;
   color: #fafafa;
   margin-top: 20px;
@@ -137,7 +40,7 @@ h1 {
 }
 
 #intro {
-  font-size: 2rem;
+  font-size: 1.7rem;
   color: #fafafa;
 }
 
@@ -321,9 +224,14 @@ h1 {
 
 /*Media query for tablets and larger (768px and up)*/
 @media screen and (min-width: 768px) {
-  #homepage {
-    min-height: 75vh;
+  body{
+    background: url(/assets/images/quiz-img/homepage-background.png) no-repeat center center/cover;
   }
+
+  #homepage {
+    background: radial-gradient(#000000d6, transparent);
+  }
+  
 
   h1 {
     font-size: 3rem;
@@ -375,12 +283,9 @@ h1 {
 
 /*Media query for laptops and larger screens (992 and up)*/
 @media screen and (min-width: 992px) {
-  #homepage {
-    min-height: 80vh;
-  }
 
   .title-intro-start {
-    padding-top: 60px;
+    padding-top: 185px;
   }
 
   h1 {
@@ -437,12 +342,12 @@ h1 {
     margin-bottom: 20px;
   }
 
-  #intro-text {
-    margin-bottom: 20px;
+  .title-intro-start {
+    padding-top: 150px;
   }
 
-  #homepage {
-    position: relative;
+  #intro-text {
+    margin-bottom: 20px;
   }
 
   #start-button {
