@@ -64,9 +64,9 @@ h1 {
 }
 
 #start-again {
-  height: 35px;
-  width: 90px;
-  border-radius: 25px;
+  height: 45px;
+  width: 100px;
+  border-radius: 15px;
   background-color: white;
   border: none;
   color: #000000;
@@ -132,6 +132,10 @@ h1 {
   color: #000000;
   font-size: 0.8rem;
   font-family: "Quicksand", sans-serif;
+}
+
+#results-button {
+  padding-left: 30px;
 }
 
 #results:hover {
@@ -246,15 +250,12 @@ h1 {
 #quiz-end {
   color: #fafafa;
   font-size: 1.5rem;
+  padding: 60px 20px 20px;
 }
 
 /*Media query for large or landscape phones (570px and up)*/
 @media screen and (min-width: 570px) {
   #restart-game {
-    padding-left: 500px;
-  }
-
-  #next-button {
     padding-left: 500px;
   }
 
@@ -298,7 +299,7 @@ h1 {
 
   #start-again {
     height: 50px;
-    width: 100px;
+    width: 110px;
     font-size: 1.1rem;
   }
 
@@ -309,16 +310,16 @@ h1 {
     font-size: 1.5rem;
   }
 
-  #next-button {
-    padding-left: 550px;
-  }
-
   #results {
     height: 50px;
     width: 100px;
     margin: 10px;
     font-size: 1.5rem;
   }
+
+  #results-button {
+  padding-left: 550px;
+}
 
   #restart {
     height: 50px;
@@ -334,7 +335,7 @@ h1 {
   }
 
   #quiz-end {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin-top: 100px;
   }
 }
@@ -385,9 +386,9 @@ h1 {
   }
 
   #start-again {
-    height: 50px;
-    width: 100px;
-    border-radius: 25px;
+    height: 55px;
+    width: 120px;
+    border-radius: 15px;
     font-size: 1rem;
   }
 
@@ -422,7 +423,7 @@ h1 {
   }
 
   #quiz-end {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 }
 
