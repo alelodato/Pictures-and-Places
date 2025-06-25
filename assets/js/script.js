@@ -18,6 +18,8 @@ const getResults = document.getElementById('results');
 const endMessage = document.getElementById('quiz-end');
 const restartButton = document.getElementById('restart');
 const restartGameBtn = document.getElementById('start-again');
+const leaderBtn = document.getElementById('leader-btn');
+const leaderBoard = document.getElementById('leaderboard');
 const gameBackground = document.getElementById('homepage');
 // Variables for shuffled questions and the current question index
 let shuffledQuestions, currentQuestionIndex;
@@ -31,6 +33,7 @@ nextButton.addEventListener('click', nextQuestion);
 restartGameBtn.addEventListener('click', startGame);
 getResults.addEventListener('click', endQuiz);
 restartButton.addEventListener('click', startGame);
+leaderBtn.addEventListener('click', showLeaderboard);
 
 /**
  * Function that starts the game when start button clicked
@@ -50,6 +53,7 @@ function startGame() {
   endMessage.classList.add('hide');
   // Hide restart button to show only when end message is shown
   restartButton.classList.add('hide');
+  leaderBtn.classList.add('hide');
   // Set score tracker to 0 at the beginning of the game
   document.getElementById('right').textContent = 0;
   document.getElementById('wrong').textContent = 0;
@@ -138,10 +142,10 @@ function checkAnswer(event) {
   // Disallows answer buttons to be clicked after answer is submitted
   answerButtons.style.pointerEvents = "none";
   // Checks if the user reached the last question, and in that case hides the next button and shows the finish button to allow to finish the game and show the results
-  if (currentQuestionIndex === questions.length){
+  if (currentQuestionIndex === questions.length) {
     nextButton.classList.add('hide');
     getResults.classList.remove('hide');
-  }else {nextButton.classList.remove('hide');
+  } else {nextButton.classList.remove('hide');
   scoreTracker.classList.remove('hide');
   }
 }
@@ -187,4 +191,13 @@ function endQuiz(){
   endMessage.classList.remove('hide');
   restartButton.classList.remove('hide');
   scoreTracker.classList.remove('hide');
+  leaderBtn.classList.remove('hide');
+}
+
+function showLeaderboard() {
+  // Shows the game leaderboard
+  scoreTracker.classList.add('hide');
+  leaderBtn.classList.add('hide');
+  endMessage.classList.add('hide');
+  leaderBoard.classList.remove('hide');
 }

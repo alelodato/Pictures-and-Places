@@ -166,6 +166,22 @@ h1 {
   border: none;
 }
 
+#leader-btn {
+  height: 35px;
+  width: 90px;
+  border-radius: 25px;
+  margin: 10px 10px 10px 220px;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 0.8rem;
+  font-family: "Quicksand", sans-serif;
+  border: none;
+}
+
+#leader-btn:hover {
+  cursor: pointer;
+}
+
 #restart:hover {
   cursor: pointer;
 }
@@ -338,6 +354,13 @@ h1 {
     font-size: 1rem;
   }
 
+  #leader-btn {
+    height: 50px;
+    width: 100px;
+    margin: 10px;
+    font-size: 1rem;
+  }
+
   #score {
     font-size: 1.3rem;
     padding-left: 80px;
@@ -427,8 +450,14 @@ h1 {
   }
 
   #restart {
-    height: 50px;
-    width: 100px;
+    height: 55px;
+    width: 120px;
+    font-size: 1rem;
+  }
+
+  #leader-btn {
+    height: 55px;
+    width: 120px;
     font-size: 1rem;
   }
 

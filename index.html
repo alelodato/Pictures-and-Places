@@ -55,7 +55,7 @@
             </div>
           </div>
           <div id="game-start">
-            <button id="start-button">Start Game</button>
+            <button id="start-button">New Game</button>
           </div>
         </div>
         <div id="question-container" class="hide">Question</div>
@@ -78,6 +78,17 @@
             again!
           </p>
         </div>
+        <!--Leaderboard-->
+        <div class="hide" id="leaderboard">
+          <h1>Leaderboard</h1>
+          <ol>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ol>
+        </div>
         <!-- Score Tracker-->
         <div id="score" class="hide">
           <p class="scores">Correct Answers:<span id="right"> 0</span></p>
@@ -97,6 +108,9 @@
         </div>
         <div id="restart-button">
           <button id="restart" class="hide">Play Again</button>
+        </div>
+        <div id="leaderboard-btn">
+          <button class="hide" id="leader-btn">Leaderboard</button>
         </div>
       </section>
       <script src="assets/js/script.js"></script>
