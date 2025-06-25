@@ -10,7 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
       rel="stylesheet"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+      rel="stylesheet"
+    />
     <!--Stylesheets-->
     <link
       rel="stylesheet"
@@ -42,57 +45,63 @@
   </head>
   <body>
     <div class="background-img">
-    <section id="homepage">
-      <div class="title-intro-start">
-        <h1 id="title">PICTURES AND PLACES</h1>
-        <div id="intro-text">
-          <div id="intro">
-            <p>Take a look at the pictures and guess the places!</p>
-            <p>How many do you know?</p>
+      <section id="homepage">
+        <div class="title-intro-start">
+          <h1 id="title">PICTURES AND PLACES</h1>
+          <div id="intro-text">
+            <div id="intro">
+              <p>Take a look at the pictures and guess the places!</p>
+              <p>How many do you know?</p>
+            </div>
+          </div>
+          <div id="game-start">
+            <button id="start-button">Start Game</button>
           </div>
         </div>
-        <div id="game-start"><button id="start-button">Start Game</button></div>
-      </div>
-      <div id="question-container" class="hide">Question</div>
-      <div id="answers-image">
-        <div id="answer-buttons" class="hide">
-          <button></button>
-          <button></button>
-          <button></button>
-          <button></button>
+        <div id="question-container" class="hide">Question</div>
+        <div id="answers-image">
+          <div id="answer-buttons" class="hide">
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+          </div>
+          <div id="quiz-image"></div>
         </div>
-        <div id="quiz-image"></div>
-      </div>
-      <!--Info Div-->
-      <div id="info" class="hide"></div>
-      <!--Quiz End Message-->
-      <div id="quiz-end" class="hide">
-        <p>Congratulations you completed the quiz!</p>
-        <p>
-          Below you'll find your results, click the button if you wanna play
-          again!
-        </p>
-      </div>
-      <!-- Score Tracker-->
-      <div id="score" class="hide">
-        <p class="scores">Correct Answers:<span id="right"> 0</span></p>
-        <p class="scores">Incorrect Answers:<span id="wrong"> 0</span></p>
-      </div>
-      <!--Buttons-->
-      <div id="restart-game">
-        <button id="start-again" class="hide">Restart Game</button>
-      </div>
-      <div id="next-button"><button id="next" class="hide">Next</button></div>
-      <div id="results-button">
-        <button id="results" class="hide">Finish</button>
-      </div>
-      <div id="restart-button">
-        <button id="restart" class="hide">Play Again</button>
-      </div>
-    </section>
-    <script src="assets/js/script.js"></script>
-    <script src="assets/js/questions.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.4/dist/sweetalert2.all.min.js"></script>
-  </div>
+        <!--Info Div-->
+        <div id="info" class="hide"></div>
+        <!--Quiz End Message-->
+        <div id="quiz-end" class="hide">
+          <p>Congratulations you completed the quiz!</p>
+          <p>
+            Below you'll find your results, click the button if you wanna play
+            again!
+          </p>
+        </div>
+        <!-- Score Tracker-->
+        <div id="score" class="hide">
+          <p class="scores">Correct Answers:<span id="right"> 0</span></p>
+          <p class="scores">Incorrect Answers:<span id="wrong"> 0</span></p>
+        </div>
+        <!--Buttons-->
+        <div class="next-restart">
+          <div id="restart-game">
+            <button id="start-again" class="hide">Restart Game</button>
+          </div>
+          <div id="next-button">
+            <button id="next" class="hide">Next</button>
+          </div>
+        </div>
+        <div id="results-button">
+          <button id="results" class="hide">Finish</button>
+        </div>
+        <div id="restart-button">
+          <button id="restart" class="hide">Play Again</button>
+        </div>
+      </section>
+      <script src="assets/js/script.js"></script>
+      <script src="assets/js/questions.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.4/dist/sweetalert2.all.min.js"></script>
+    </div>
   </body>
 </html>
