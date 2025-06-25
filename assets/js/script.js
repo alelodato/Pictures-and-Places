@@ -182,6 +182,7 @@ function endQuiz(){
   answerButtons.classList.add('hide');
   quizImage.classList.add('hide');
   getResults.classList.add('hide');
+  restartGameBtn.classList.add('hide');
   // Shows end game results, message and restart game button
   endMessage.classList.remove('hide');
   restartButton.classList.remove('hide');
