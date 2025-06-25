@@ -4,6 +4,8 @@
 // Game title,intro message and start button variables
 const title = document.getElementById('title');
 const intro = document.getElementById('intro');
+const playerName = document.getElementById('player-name');
+const newGame = document.getElementById('new-game-btn');
 const startButton = document.getElementById("start-button");
 const start = document.querySelector('.title-intro-start');
 // Questions, answers buttons, quiz images, next button and score tracker variables
@@ -28,6 +30,7 @@ let questionsInfo;
 /**
  * Event Listeners
  */
+newGame.addEventListener('click', insertName);
 startButton.addEventListener('click', startGame);
 nextButton.addEventListener('click', nextQuestion);
 restartGameBtn.addEventListener('click', startGame);
@@ -35,13 +38,22 @@ getResults.addEventListener('click', endQuiz);
 restartButton.addEventListener('click', startGame);
 leaderBtn.addEventListener('click', showLeaderboard);
 
+function insertName() {
+  // Hide title,intro message and start button, to make space for the quiz game content
+  title.classList.add('hide');
+  intro.classList.add('hide');
+  newGame.classList.add('hide');
+  playerName.classList.remove('hide');
+  startButton.classList.remove('hide');
+}
+
 /**
  * Function that starts the game when start button clicked
  */
 function startGame() {
   gameBackground.style.backgroundColor = 'rgb(0 0 0 / 66%)';
-  // Hide title,intro message and start button, to make space for the quiz game content
   start.classList.add('hide');
+  playerName.classList.add('hide');
   // Remove 'hide' class from quiz content to show when game starts
   questionContainer.classList.remove('hide');
   answerButtons.classList.remove('hide');

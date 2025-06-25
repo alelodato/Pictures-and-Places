@@ -1,4 +1,11 @@
-@keyframes scale-up-center-normal {0% { transform: scale(0.5); } 100% { transform: scale(1);} }
+@keyframes scale-up-center-normal {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 /* Body And Intro Text Content */
 * {
   margin: 0;
@@ -13,8 +20,8 @@ body {
 }
 
 .background-img {
-  background: url('../images/quiz-img/mobile-background.png') no-repeat
-    center center/cover;
+  background: url("../images/quiz-img/mobile-background.png") no-repeat center
+    center/cover;
   height: 100vh;
   width: 100%;
 }
@@ -55,10 +62,40 @@ h1 {
   color: #fafafa;
 }
 
+#player-name h1 {
+  margin-bottom: 0;
+}
+
+#player-name input {
+  margin: 20px;
+  height: 20px;
+  width: 150px;
+  border-radius: 15px;
+  border: none;
+  padding: 10px;
+  font-size: 1rem;
+}
+
 /*Start Button*/
 
-#game-start {
+#new-game {
   animation: scale-up-center-normal 5s ease 0s infinite normal none;
+}
+
+#new-game-btn {
+  height: 35px;
+  width: 90px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  background-color: white;
+  border: none;
+  color: #000000;
+  font-size: 0.8rem;
+  font-family: "Quicksand", sans-serif;
+}
+
+#new-game-btn:hover {
+  cursor: pointer;
 }
 
 #start-button {
@@ -344,8 +381,8 @@ h1 {
   }
 
   #results-button {
-  padding-left: 550px;
-}
+    padding-left: 550px;
+  }
 
   #restart {
     height: 50px;
@@ -388,6 +425,11 @@ h1 {
     width: 100px;
     font-size: 1rem;
   }
+
+  #player-name input {
+  height: 40px;
+  width: 250px;
+}
 
   #question-container {
     font-size: 2rem;
