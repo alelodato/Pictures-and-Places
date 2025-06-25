@@ -276,6 +276,10 @@ h1 {
     font-size: 2rem;
   }
 
+  .title-intro-start {
+    padding-top: 350px;
+  }
+
   #quiz-image img {
     width: 600px;
   }
