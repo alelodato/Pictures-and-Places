@@ -89,6 +89,10 @@ h1 {
 
 /*Next Button*/
 
+#next-button {
+  padding-left: 40px;
+}
+
 #next {
   height: 35px;
   width: 90px;
@@ -103,6 +107,11 @@ h1 {
 
 #next:hover {
   cursor: pointer;
+}
+
+#restart-game {
+  padding-left: 250px;
+  padding-top: 20px;
 }
 
 /*Finish Button*/

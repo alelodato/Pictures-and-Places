@@ -28,6 +28,7 @@ let questionsInfo;
  */
 startButton.addEventListener('click', startGame);
 nextButton.addEventListener('click', nextQuestion);
+restartGameBtn.addEventListener('click', startGame);
 getResults.addEventListener('click', endQuiz);
 restartButton.addEventListener('click', startGame);
 
