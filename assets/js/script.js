@@ -8,6 +8,7 @@ const playerName = document.getElementById('player-name');
 const newGame = document.getElementById('new-game-btn');
 const startButton = document.getElementById("start-button");
 const start = document.querySelector('.title-intro-start');
+const nameInput = document.getElementById('player-name-input');
 // Questions, answers buttons, quiz images, next button and score tracker variables
 const questionContainer = document.getElementById('question-container');
 const quizImage = document.getElementById('quiz-image');
@@ -27,6 +28,10 @@ const gameBackground = document.getElementById('homepage');
 let shuffledQuestions, currentQuestionIndex;
 // Variable to get the questions info text content
 let questionsInfo;
+let leaderList = document.getElementById('board');
+// Empty array to store scores to render into the leaderboard
+let scores = [];
+
 /**
  * Event Listeners
  */
@@ -51,6 +56,7 @@ function insertName() {
  * Function that starts the game when start button clicked
  */
 function startGame() {
+  scores.push(`name:${playerName}`)
   gameBackground.style.backgroundColor = 'rgb(0 0 0 / 66%)';
   start.classList.add('hide');
   playerName.classList.add('hide');
@@ -204,6 +210,8 @@ function endQuiz(){
   restartButton.classList.remove('hide');
   scoreTracker.classList.remove('hide');
   leaderBtn.classList.remove('hide');
+  let finalScore = parseInt(document.getElementById('right').textContent);
+  scores.push(`score:${finalScore}`);
 }
 
 function showLeaderboard() {
@@ -212,4 +220,12 @@ function showLeaderboard() {
   leaderBtn.classList.add('hide');
   endMessage.classList.add('hide');
   leaderBoard.classList.remove('hide');
+  // Rendering the leaderboard
+  scores.sort((a, b) => b.score- a.score);
+  leaderList.innerHTML = "";
+  scores.forEach((player, index) => {
+    const listItem = document.createElement("li");
+    listItem.textContent = `${index + 1}. ${player.name} - ${player.score}`;
+    leaderList.appendChild(listItem);
+  });
 }
