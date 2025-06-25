@@ -17,6 +17,7 @@ const getResults = document.getElementById('results');
 // End game and restart button variable
 const endMessage = document.getElementById('quiz-end');
 const restartButton = document.getElementById('restart');
+const restartGameBtn = document.getElementById('start-again');
 const gameBackground = document.getElementById('homepage');
 // Variables for shuffled questions and the current question index
 let shuffledQuestions, currentQuestionIndex;
@@ -43,6 +44,7 @@ function startGame() {
   nextButton.classList.remove('hide');
   scoreTracker.classList.remove('hide');
   quizImage.classList.remove('hide');
+  restartGameBtn.classList.remove('hide');
   // Hide end message to show only when finish button is pressed
   endMessage.classList.add('hide');
   // Hide restart button to show only when end message is shown
