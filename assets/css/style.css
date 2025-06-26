@@ -39,14 +39,14 @@ h1 {
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #fafafa;
   margin-bottom: 20px;
   padding-top: 20px;
 }
 
 .title-intro-start {
-  padding: 150px 15px 15px;;
+  padding: 240px 15px 15px;;
 }
 
 #intro-button {
@@ -58,7 +58,7 @@ h1 {
 }
 
 #intro {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   color: #fafafa;
 }
 
