@@ -72,6 +72,7 @@ function startGame() {
   // Hide restart button to show only when end message is shown
   restartButton.classList.add('hide');
   leaderBtn.classList.add('hide');
+  leaderBoard.classList.add('hide');
   // Set score tracker to 0 at the beginning of the game
   document.getElementById('right').textContent = 0;
   document.getElementById('wrong').textContent = 0;
