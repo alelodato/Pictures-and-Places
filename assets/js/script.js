@@ -8,7 +8,7 @@ const playerName = document.getElementById('player-name');
 const newGame = document.getElementById('new-game-btn');
 const startButton = document.getElementById("start-button");
 const start = document.querySelector('.title-intro-start');
-const nameInput = document.getElementById('player-name-input');
+const playerNameForm = document.getElementById('player-name-form');
 // Questions, answers buttons, quiz images, next button and score tracker variables
 const questionContainer = document.getElementById('question-container');
 const quizImage = document.getElementById('quiz-image');
@@ -36,7 +36,7 @@ let scores = [];
  * Event Listeners
  */
 newGame.addEventListener('click', insertName);
-startButton.addEventListener('click', startGame);
+startButton.addEventListener('submit', startGame);
 nextButton.addEventListener('click', nextQuestion);
 restartGameBtn.addEventListener('click', startGame);
 getResults.addEventListener('click', endQuiz);
@@ -48,8 +48,7 @@ function insertName() {
   title.classList.add('hide');
   intro.classList.add('hide');
   newGame.classList.add('hide');
-  playerName.classList.remove('hide');
-  startButton.classList.remove('hide');
+  playerNameForm.classList.remove('hide');
 }
 
 /**
@@ -59,7 +58,7 @@ function startGame() {
   scores.push(`name:${playerName}`)
   gameBackground.style.backgroundColor = 'rgb(0 0 0 / 66%)';
   start.classList.add('hide');
-  playerName.classList.add('hide');
+  playerNameForm.classList.remove('hide');
   // Remove 'hide' class from quiz content to show when game starts
   questionContainer.classList.remove('hide');
   answerButtons.classList.remove('hide');

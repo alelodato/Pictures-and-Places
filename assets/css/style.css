@@ -46,7 +46,7 @@ h1 {
 }
 
 .title-intro-start {
-  padding: 240px 15px 15px;;
+  padding: 240px 15px 15px;
 }
 
 #intro-button {
@@ -62,24 +62,27 @@ h1 {
   color: #fafafa;
 }
 
-#player-name h1 {
-  margin-bottom: 0;
+#player-name-form label {
+  font-size: 2.5rem;
+  color: #ffffff;
+  display: block;
 }
 
-#player-name input {
-  margin: 20px;
-  height: 20px;
-  width: 150px;
+#player-name-form input {
+  margin: 20px auto 20px auto;
+  height: 30px;
+  width: 200px;
   border-radius: 15px;
   border: none;
   padding: 10px;
   font-size: 1rem;
+  display: block;
 }
 
 /*Start Button*/
 
 #new-game {
-  animation: scale-up-center-normal 5s ease 0s infinite normal none;
+  animation: scale-up-center-normal 5s ease 0s 1 normal none;
 }
 
 #new-game-btn {
@@ -249,7 +252,7 @@ h1 {
   border-radius: 3rem;
   font-size: 1rem;
   font-family: "Quicksand", sans-serif;
-  background-color: #1cd0b2;
+  background-color: #ffffff;
   margin: 5px;
   color: #000000;
 }
@@ -330,8 +333,8 @@ h1 {
 /*Media query for tablets and larger (768px and up)*/
 @media screen and (min-width: 768px) {
   .background-img {
-    background: url(/assets/images/quiz-img/homepage-background.png) no-repeat
-      center center/cover;
+    background: url(../images/quiz-img/homepage-background.png) no-repeat center
+      center/cover;
   }
 
   h1 {
@@ -420,6 +423,12 @@ h1 {
     font-size: 3.5rem;
   }
 
+  #new-game-btn {
+    height: 55px;
+    width: 120px;
+    font-size: 1rem;
+  }
+
   #start-button {
     height: 50px;
     width: 100px;
@@ -427,9 +436,9 @@ h1 {
   }
 
   #player-name input {
-  height: 40px;
-  width: 250px;
-}
+    height: 40px;
+    width: 250px;
+  }
 
   #question-container {
     font-size: 2rem;
