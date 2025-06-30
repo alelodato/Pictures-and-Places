@@ -323,6 +323,16 @@ h1 {
   padding: 60px 20px 20px;
 }
 
+/* Leaderboard */
+
+#board {
+  color: #fafafa;
+}
+
+#board li {
+  font-size: 1.5rem;
+}
+
 /*Media query for large or landscape phones (570px and up)*/
 @media screen and (min-width: 570px) {
   #restart-game {

@@ -4,7 +4,7 @@
 // Game title,intro message and start button variables
 const title = document.getElementById("title");
 const intro = document.getElementById("intro");
-const playerName = document.getElementById("player-name");
+const playerNameInput = document.getElementById("player-name");
 const newGame = document.getElementById("new-game-btn");
 const nameSubmit = document.getElementById("player-name-form");
 const start = document.querySelector(".title-intro-start");
@@ -50,7 +50,6 @@ document.addEventListener("DOMContentLoaded", function () {
  * Function that starts the game when start button clicked
  */
 function startGame() {
-  scores.push(`name:${playerName}`);
   gameBackground.style.backgroundColor = "rgb(0 0 0 / 66%)";
   start.classList.add("hide");
   // Remove 'hide' class from quiz content to show when game starts
@@ -204,16 +203,25 @@ function insertName() {
  * Function to show quiz game end message and results, when finish button is pressed
  */
 function endQuiz(event) {
-  console.log(endQuiz);
   event.preventDefault();
+  playerName = document.getElementById("player-name-input").value;
+  let finalScore = parseInt(document.getElementById("right").textContent);
+  if (scores.length < 10) {
+  scores.push({ name: playerName, score: finalScore });
+  } else {
+    let lowestScore = scores.reduce((lowestIdx, player, idx, arr) => 
+    player.score < arr[lowestIdx].score ? idx : lowestIdx, 0);
+    if (finalScore > scores[lowestScore].score) {
+      scores[lowestScore] = {name: playerName, score: finalScore};
+    }
+  }
+  console.log(scores);
   playerNameForm.classList.add("hide");
   // Shows end game results, message and restart game button
   endMessage.classList.remove("hide");
   restartButton.classList.remove("hide");
   scoreTracker.classList.remove("hide");
   leaderBtn.classList.remove("hide");
-  let finalScore = parseInt(document.getElementById("right").textContent);
-  scores.push(`score:${finalScore}`);
 }
 
 function showLeaderboard() {
