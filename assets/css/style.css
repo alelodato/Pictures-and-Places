@@ -118,8 +118,8 @@ h1 {
 }
 
 #start-again {
-  height: 45px;
-  width: 100px;
+  height: 40px;
+  width: 90px;
   border-radius: 15px;
   background-color: white;
   border: none;
@@ -202,7 +202,7 @@ h1 {
   height: 35px;
   width: 90px;
   border-radius: 25px;
-  margin: 10px;
+  margin: 40px 10px 10px;
   background-color: #ffffff;
   color: #000000;
   font-size: 0.8rem;
@@ -214,7 +214,7 @@ h1 {
   height: 35px;
   width: 90px;
   border-radius: 25px;
-  margin: 10px 10px 10px 220px;
+  margin: 10px;
   background-color: #ffffff;
   color: #000000;
   font-size: 0.8rem;
