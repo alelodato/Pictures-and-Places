@@ -1,3 +1,4 @@
+@keyframes rotate-center-reverse {0% { transform: rotate(0); } 100% { transform: rotate(360deg);} }
 @keyframes scale-up-center-normal {
   0% {
     transform: scale(0.5);
@@ -20,7 +21,7 @@ body {
 }
 
 .background-img {
-  background: url("../images/quiz-img/mobile-background.png") no-repeat center
+  background: url("../images/quiz-img/mobile-background.jpg") no-repeat center
     center/cover;
   height: 100vh;
   width: 100%;
@@ -31,7 +32,7 @@ body {
   width: 100%;
   font-family: "Quicksand", sans-serif;
   min-height: 100vh;
-  background: radial-gradient(#000000ed, #00000080);
+  background: radial-gradient(#000000ed, #0000009e);
 }
 
 h1 {
@@ -59,6 +60,10 @@ h1 {
   font-size: 5rem;
   color: #ffffff;
   padding: 0 10px;
+}
+
+.fa-earth-europe {
+  animation: rotate-center-reverse 5s ease 2s infinite reverse none; 
 }
 
 #intro-button {
