@@ -58,6 +58,7 @@ h1 {
 .intro-icons i {
   font-size: 5rem;
   color: #ffffff;
+  padding: 0 10px;
 }
 
 #intro-button {
