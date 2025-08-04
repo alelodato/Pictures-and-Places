@@ -31,7 +31,7 @@ body {
   width: 100%;
   font-family: "Quicksand", sans-serif;
   min-height: 100vh;
-  background: radial-gradient(#000000ed, #00000052);
+  background: radial-gradient(#000000ed, #00000080);
 }
 
 h1 {
@@ -39,14 +39,25 @@ h1 {
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
-  font-size: 2rem;
+  font-size: 3rem;
   color: #fafafa;
   margin-bottom: 20px;
-  padding-top: 20px;
 }
 
 .title-intro-start {
-  padding: 240px 35px 15px;
+  padding: 120px 35px 15px;
+}
+
+.intro-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px;
+}
+
+.intro-icons i {
+  font-size: 5rem;
+  color: #ffffff;
 }
 
 #intro-button {
@@ -90,14 +101,14 @@ h1 {
 }
 
 #new-game-btn {
-  height: 35px;
-  width: 90px;
+  height: 55px;
+  width: 150px;
   border-radius: 25px;
   margin-bottom: 20px;
   background-color: white;
   border: none;
   color: #000000;
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   font-family: "Quicksand", sans-serif;
 }
 
@@ -355,6 +366,10 @@ h1 {
     font-size: 3rem;
   }
 
+  .intro-icons {
+    display: none;
+  }
+
   #intro-text p {
     font-size: 2rem;
   }
@@ -539,7 +554,7 @@ h1 {
   }
 
   .title-intro-start {
-    padding-top: 200px;
+    padding-top: 150px;
   }
 
   #intro-text {
