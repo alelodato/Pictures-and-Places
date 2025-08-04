@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
  * Function that starts the game when start button clicked
  */
 function startGame() {
-  gameBackground.style.backgroundColor = "rgb(0 0 0 / 66%)";
+  gameBackground.style.backgroundColor = "rgb(0 0 0 / 40%)";
   start.classList.add("hide");
   // Remove 'hide' class from quiz content to show when game starts
   questionContainer.classList.remove("hide");
