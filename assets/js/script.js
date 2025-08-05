@@ -176,16 +176,6 @@ function incrementCorrect() {
   document.getElementById("right").textContent = previousCorrect + 1;
 }
 
-/**
- * Function to increment correct answer score when correct answer is selected by the user
- */
-function incrementIncorrect() {
-  let previousIncorrect = parseInt(
-    document.getElementById("wrong").textContent
-  );
-  document.getElementById("wrong").textContent = previousIncorrect + 1;
-}
-
 function insertName() {
   // Hide all the quiz content to make space for results and end game message
   questionContainer.classList.add("hide");
@@ -215,9 +205,11 @@ function endQuiz(event) {
   console.log(scores);
   playerNameForm.classList.add("hide");
   // Shows end game results, message and restart game button
+  endMessage.innerHTML = `Congratulations you completed the quiz! <br>
+            You guessed <strong>${finalScore}</strong> places, click the button if you wanna play
+            again!`
   endMessage.classList.remove("hide");
   restartButton.classList.remove("hide");
-  scoreTracker.classList.remove("hide");
   leaderBtn.classList.remove("hide");
 }
 
