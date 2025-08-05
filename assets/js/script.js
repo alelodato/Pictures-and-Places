@@ -46,6 +46,17 @@ document.addEventListener("DOMContentLoaded", function () {
   leaderBtn.addEventListener("click", showLeaderboard);
 });
 
+/** Function that makes sure content is displayed dynamically on all devices 
+ * having different view height
+*/
+function setRealVH() {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  }
+
+  window.addEventListener('load', setRealVH);
+  window.addEventListener('resize', setRealVH);
+
 /**
  * Function that starts the game when start button clicked
  */
