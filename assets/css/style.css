@@ -501,7 +501,7 @@ h1 {
 
   #score {
     font-size: 1.5rem;
-    padding-left: 110px;
+    padding: 10px 50px;
   }
 
   #start-again {
