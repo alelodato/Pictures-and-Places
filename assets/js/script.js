@@ -67,7 +67,6 @@ function startGame() {
   leaderBoard.classList.add("hide");
   // Set score tracker to 0 at the beginning of the game
   document.getElementById("right").textContent = 0;
-  document.getElementById("wrong").textContent = 0;
   // Set questions to appear in random order
   shuffledQuestions = questions.sort(() => Math.random() - 0.5);
   currentQuestionIndex = 0;
@@ -147,8 +146,6 @@ function checkAnswer(event) {
     });
     let correctAnswer = document.querySelector("[data-correct='true']");
     correctAnswer.style.backgroundColor = "lightgreen";
-    // Increments score tracker for incorrect answers
-    incrementIncorrect();
   }
   // Disallows answer buttons to be clicked after answer is submitted
   answerButtons.style.pointerEvents = "none";
