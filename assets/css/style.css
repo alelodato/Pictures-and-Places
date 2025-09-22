@@ -48,13 +48,6 @@ h1 {
   padding: 120px 35px 15px;
 }
 
-.intro-icons {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 20px;
-}
-
 .intro-icons i {
   font-size: 5rem;
   color: #ffffff;
