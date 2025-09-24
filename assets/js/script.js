@@ -46,16 +46,16 @@ document.addEventListener("DOMContentLoaded", function () {
   leaderBtn.addEventListener("click", showLeaderboard);
 });
 
-/** Function that makes sure content is displayed dynamically on all devices 
+/** Function that makes sure content is displayed dynamically on all devices
  * having different view height
-*/
+ */
 function setRealVH() {
-    let vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
-  }
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty("--vh", `${vh}px`);
+}
 
-  window.addEventListener('load', setRealVH);
-  window.addEventListener('resize', setRealVH);
+window.addEventListener("load", setRealVH);
+window.addEventListener("resize", setRealVH);
 
 /**
  * Function that starts the game when start button clicked
@@ -205,20 +205,32 @@ function endQuiz(event) {
   playerName = document.getElementById("player-name-input").value;
   let finalScore = parseInt(document.getElementById("right").textContent);
   if (scores.length < 10) {
-  scores.push({ name: playerName, score: finalScore });
+    scores.push({ name: playerName, score: finalScore });
   } else {
-    let lowestScore = scores.reduce((lowestIdx, player, idx, arr) => 
-    player.score < arr[lowestIdx].score ? idx : lowestIdx, 0);
+    let lowestScore = scores.reduce(
+      (lowestIdx, player, idx, arr) =>
+        player.score < arr[lowestIdx].score ? idx : lowestIdx,
+      0
+    );
     if (finalScore > scores[lowestScore].score) {
-      scores[lowestScore] = {name: playerName, score: finalScore};
+      scores[lowestScore] = { name: playerName, score: finalScore };
     }
   }
-  console.log(scores);
+  // Salva punteggio sul backend
+  fetch("https://pictures-backend.up.railway.app/scores", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ name: playerName, score: finalScore }),
+  })
+    .then((res) => res.json())
+    .then((data) => console.log("✅ Score saved:", data))
+    .catch((err) => console.error("❌ Error saving score:", err));
+
   playerNameForm.classList.add("hide");
   // Shows end game results, message and restart game button
   endMessage.innerHTML = `Congratulations you completed the quiz! <br>
             You guessed <strong>${finalScore}</strong> places, click the button if you wanna play
-            again!`
+            again!`;
   endMessage.classList.remove("hide");
   restartButton.classList.remove("hide");
   leaderBtn.classList.remove("hide");
@@ -230,12 +242,19 @@ function showLeaderboard() {
   leaderBtn.classList.add("hide");
   endMessage.classList.add("hide");
   leaderBoard.classList.remove("hide");
-  // Rendering the leaderboard
-  scores.sort((a, b) => b.score - a.score);
   leaderList.innerHTML = "";
-  scores.forEach((player, index) => {
-    const listItem = document.createElement("li");
-    listItem.textContent = `${index + 1}. ${player.name} - ${player.score}`;
-    leaderList.appendChild(listItem);
-  });
+
+  // Rendering the leaderboard
+  fetch("https://pictures-backend.up.railway.app/scores")
+    .then((res) => res.json())
+    .then((data) => {
+      data.forEach((player, index) => {
+        const listItem = document.createElement("li");
+        listItem.textContent = `${index + 1}. ${player.name} - ${player.score}`;
+        leaderList.appendChild(listItem);
+      });
+    })
+    .catch((err) => {
+      console.error("❌ Error fetching leaderboard:", err);
+    });
 }
