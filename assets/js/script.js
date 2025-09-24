@@ -216,8 +216,8 @@ function endQuiz(event) {
       scores[lowestScore] = { name: playerName, score: finalScore };
     }
   }
-  // Salva punteggio sul backend
-  fetch("pictures-and-places-production.up.railway.app/scores", {
+  // Saves scores on backend server
+  fetch("https://pictures-and-places-production.up.railway.app/scores", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ name: playerName, score: finalScore }),
@@ -245,7 +245,7 @@ function showLeaderboard() {
   leaderList.innerHTML = "";
 
   // Rendering the leaderboard
-  fetch("pictures-and-places-production.up.railway.app/scores")
+  fetch("https://pictures-and-places-production.up.railway.app/scores")
     .then((res) => res.json())
     .then((data) => {
       data.forEach((player, index) => {
