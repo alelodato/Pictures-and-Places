@@ -9,6 +9,12 @@ const { Pool } = pkg;
 const app = express();
 const PORT = process.env.PORT || 5000;
 
+app.use(cors({
+    origin: "*",
+    methods: ["GET", "POST"],
+    allowedHeaders: ["Content-Type"]
+}));
+
 // Connection to Postgres
 const pool = new Pool({
   connectionString: process.env.DATABASE_URL,

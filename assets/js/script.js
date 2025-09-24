@@ -217,7 +217,7 @@ function endQuiz(event) {
     }
   }
   // Salva punteggio sul backend
-  fetch("https://pictures-backend.up.railway.app/scores", {
+  fetch("pictures-and-places-production.up.railway.app/scores", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ name: playerName, score: finalScore }),
@@ -245,7 +245,7 @@ function showLeaderboard() {
   leaderList.innerHTML = "";
 
   // Rendering the leaderboard
-  fetch("https://pictures-backend.up.railway.app/scores")
+  fetch("pictures-and-places-production.up.railway.app/scores")
     .then((res) => res.json())
     .then((data) => {
       data.forEach((player, index) => {
