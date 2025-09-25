@@ -9,8 +9,19 @@ const { Pool } = pkg;
 const app = express();
 const PORT = process.env.PORT || 5000;
 
+const allowList = new Set([
+  "http://localhost:8080",
+  "https://alelodato.github.io",
+]);
+
 app.use(cors({
-  origin: ["http://localhost:8080", "https://alelodato.github.io", "https://pictures-and-places.vercel.app"],
+  origin: (origin, cb) => {
+    if (!origin) return cb(null, true);
+    if (origin.endsWith(".vercel.app") || allowList.has(origin)) {
+      return cb(null, true);
+    }
+    return cb(new Error("Not allowed by CORS"));
+  },
   methods: ["GET", "POST"],
   allowedHeaders: ["Content-Type"]
 }));
