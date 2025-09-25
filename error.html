@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Error - Pictures and Places</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .error-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      max-width: 400px;
+      background: #111;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      background: #ff4c4c;
+      color: #fff;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+    button:hover {
+      background: #ff1a1a;
+    }
+  </style>
+</head>
+<body>
+  <div class="error-box">
+    <h1>Oops! Something went wrong 😢</h1>
+    <p>We couldn’t connect to the server.<br>Please try again later.</p>
+    <button onclick="window.location.href='index.html'">Back to Game</button>
+  </div>
+</body>
+</html>

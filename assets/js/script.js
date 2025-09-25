@@ -226,7 +226,10 @@ function endQuiz(event) {
   })
     .then((res) => res.json())
     .then((data) => console.log("✅ Score saved:", data))
-    .catch((err) => console.error("❌ Error saving score:", err));
+    .catch((err) => {
+      console.error("❌ Error saving score:", err);
+      window.location.href = "error.html"; // redirect to the error page
+    });
 
   playerNameForm.classList.add("hide");
   // Shows end game results, message and restart game button
@@ -258,5 +261,6 @@ function showLeaderboard() {
     })
     .catch((err) => {
       console.error("❌ Error fetching leaderboard:", err);
+      window.location.href = "error.html";
     });
 }
