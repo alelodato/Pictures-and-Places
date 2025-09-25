@@ -217,7 +217,7 @@ function endQuiz(event) {
     }
   }
   // Saves scores on backend server
-  fetch("https://pictures-and-places-production.up.railway.app/scores", {
+  fetch("https://pictures-and-places.onrender.com/scores", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ name: playerName, score: finalScore }),
@@ -245,7 +245,7 @@ function showLeaderboard() {
   leaderList.innerHTML = "";
 
   // Rendering the leaderboard
-  fetch("https://pictures-and-places-production.up.railway.app/scores")
+  fetch("https://pictures-and-places.onrender.com/scores")
     .then((res) => res.json())
     .then((data) => {
       data.forEach((player, index) => {
