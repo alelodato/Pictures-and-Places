@@ -136,7 +136,7 @@ h1 {
 #start-again {
   height: 40px;
   width: 90px;
-  border-radius: 15px;
+  border-radius: 40px;
   background-color: white;
   border: none;
   color: #000000;
@@ -489,9 +489,9 @@ button:hover {
   }
 
   #new-game-btn {
-    height: 55px;
-    width: 120px;
-    font-size: 1rem;
+    height: 75px;
+    width: 150px;
+    font-size: 1.2rem;
   }
 
   #name-submission {
@@ -506,12 +506,17 @@ button:hover {
   }
 
   #question-container {
+    padding-top: 10px;
     font-size: 2rem;
   }
 
   #answers-image {
     display: flex;
     flex-direction: row;
+  }
+
+  #answer-buttons {
+    margin: 0;
   }
 
   #answer-buttons button {
@@ -526,7 +531,6 @@ button:hover {
   #quiz-image img {
     width: 550px;
     height: 400px;
-    margin-top: 10px;
   }
 
   #score {
@@ -537,7 +541,6 @@ button:hover {
   #start-again {
     height: 55px;
     width: 120px;
-    border-radius: 15px;
     font-size: 1rem;
   }
 
@@ -600,6 +603,10 @@ button:hover {
   #name-submission {
     margin-bottom: 20px;
     animation: scale-up-center-normal 1s ease 0s 1 normal none;
+  }
+
+  #start-again {
+    margin-top: 0;
   }
 
   #restart-game {

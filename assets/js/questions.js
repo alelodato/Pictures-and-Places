@@ -87,7 +87,7 @@ const questions = [
       {text:'Greece', correct:false},
       {text:'Morocco', correct:true}
   ],
-    imageUrl: "assets/images/quiz-img/chefchaouen.jpeg",
+    imageUrl: "assets/images/quiz-img/chefchaouen.jpg",
     info:'Chefchaouen is a city in northwest Morocco. It is the chief town of the province of the same name situated in a montainous region in Nothern Morocco and is noted for its buildings in shades of blue, for which it is nicknamed the "Blue City".'
   },
   {
@@ -98,7 +98,7 @@ const questions = [
       {text:'Shanghai', correct:true},
       {text:'Hong Kong', correct:false}
   ],
-    imageUrl: "assets/images/quiz-img/shanghai.jpeg",
+    imageUrl: "assets/images/quiz-img/shanghai.jpg",
     info:'Shanghai, Lujiazui in particular, has numerous skyscrapers, making it the fifth city in the world with the most skyscrapers. Among the most prominent examples are the 421 m high Jin Mao Tower, the 492 m high Shanghai World Financial Center, and the 632 m high Shanghai Tower, which is the tallest building in China and the third tallest in the world.'
   },
   {
