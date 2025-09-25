@@ -31,6 +31,8 @@ let questionsInfo;
 let leaderList = document.getElementById("board");
 // Empty array to store scores to render into the leaderboard
 let scores = [];
+// Deployed backend url, to be fetched to create a table and save player scores
+const API_BASE = "https://pictures-and-places.onrender.com"
 
 /**
  * Event Listeners
@@ -216,7 +218,6 @@ function endQuiz(event) {
       scores[lowestScore] = { name: playerName, score: finalScore };
     }
   }
-  const API_BASE = "https://pictures-and-places.onrender.com"
   // Saves scores on backend server
   fetch(`${API_BASE}/scores`, {
     method: "POST",
