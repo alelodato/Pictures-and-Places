@@ -216,8 +216,9 @@ function endQuiz(event) {
       scores[lowestScore] = { name: playerName, score: finalScore };
     }
   }
+  const API_BASE = "https://pictures-and-places.onrender.com"
   // Saves scores on backend server
-  fetch("https://pictures-and-places.onrender.com/scores", {
+  fetch(`${API_BASE}/scores`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ name: playerName, score: finalScore }),
@@ -245,7 +246,7 @@ function showLeaderboard() {
   leaderList.innerHTML = "";
 
   // Rendering the leaderboard
-  fetch("https://pictures-and-places.onrender.com/scores")
+  fetch(`${API_BASE}/scores`)
     .then((res) => res.json())
     .then((data) => {
       data.forEach((player, index) => {
