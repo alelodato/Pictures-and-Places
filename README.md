@@ -2,7 +2,7 @@
 
 ![alt text](assets/images/readme-img/Responsive-img.png)
 
-Visit the deployed website: https://alelodato.github.io/Pictures-and-Places/;
+Visit the deployed website: https://pictures-and-places.vercel.app/;
 
 Pictures And Places is an interactive quiz game made for anyone who loves travels and geography and want to test their knowledge.
 Users on this website can participate to a quiz game showing 10 questions with a related picture to each one of them. The users are requested to guess where the place shown in the picture is located, and to do that is provided with 4 possible answers. A correct or incorrect answer is going to be registered with a score tracker at the bottom left of the page so that the users can keep track of their progresses throughout the game, and at the end of it, they will receive a feedback with the score, and are given the chance to play again.
