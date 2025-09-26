@@ -74,7 +74,7 @@ h1 {
 }
 
 #intro {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   color: #fafafa;
 }
 
@@ -106,14 +106,14 @@ h1 {
 }
 
 #new-game-btn {
-  height: 55px;
-  width: 130px;
+  height: 50px;
+  width: 100px;
   border-radius: 40px;
   margin-bottom: 20px;
   background-color: white;
   border: none;
   color: #000000;
-  font-size: 1rem;
+  font-size: 0.6rem;
   font-family: "Quicksand", sans-serif;
 }
 
@@ -129,7 +129,7 @@ h1 {
   background-color: white;
   border: none;
   color: #000000;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   font-family: "Quicksand", sans-serif;
 }
 
@@ -140,7 +140,7 @@ h1 {
   background-color: white;
   border: none;
   color: #000000;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   font-family: "Quicksand", sans-serif;
 }
 
@@ -221,7 +221,7 @@ h1 {
   margin: 40px 10px 10px;
   background-color: #ffffff;
   color: #000000;
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   font-family: "Quicksand", sans-serif;
   border: none;
 }
@@ -233,7 +233,7 @@ h1 {
   margin: 10px;
   background-color: #ffffff;
   color: #000000;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   font-family: "Quicksand", sans-serif;
   border: none;
 }
