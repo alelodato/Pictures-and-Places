@@ -24,15 +24,12 @@ const restartGameBtn = document.getElementById("start-again");
 const leaderBtn = document.getElementById("leader-btn");
 const leaderBoard = document.getElementById("leaderboard");
 const gameBackground = document.getElementById("homepage");
+
 // Variables for shuffled questions and the current question index
 let shuffledQuestions, currentQuestionIndex;
 // Variable to get the questions info text content
 let questionsInfo;
 let leaderList = document.getElementById("board");
-// Empty array to store scores to render into the leaderboard
-let scores = [];
-// Deployed backend url, to be fetched to create a table and save player scores
-const API_BASE = "https://pictures-and-places.onrender.com"
 
 /**
  * Event Listeners
@@ -204,32 +201,18 @@ function insertName() {
  */
 function endQuiz(event) {
   event.preventDefault();
-  playerName = document.getElementById("player-name-input").value;
-  let finalScore = parseInt(document.getElementById("right").textContent);
-  if (scores.length < 10) {
-    scores.push({ name: playerName, score: finalScore });
-  } else {
-    let lowestScore = scores.reduce(
-      (lowestIdx, player, idx, arr) =>
-        player.score < arr[lowestIdx].score ? idx : lowestIdx,
-      0
-    );
-    if (finalScore > scores[lowestScore].score) {
-      scores[lowestScore] = { name: playerName, score: finalScore };
-    }
+
+  const playerNameInput = document.getElementById("player-name-input");
+  const playerName = playerNameInput.value.trim();
+  const finalScore = parseInt(document.getElementById("right").textContent);
+
+  if (!playerName) {
+    alert("Please enter your name to save your score!");
+    return;
   }
-  // Saves scores on backend server
-  fetch(`${API_BASE}/scores`, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ name: playerName, score: finalScore }),
-  })
-    .then((res) => res.json())
-    .then((data) => console.log("✅ Score saved:", data))
-    .catch((err) => {
-      console.error("❌ Error saving score:", err);
-      window.location.href = "error.html"; // redirect to the error page
-    });
+
+  // Salva il punteggio in localStorage (score.js)
+  saveScore(playerName, finalScore);
 
   playerNameForm.classList.add("hide");
   // Shows end game results, message and restart game button
@@ -249,18 +232,12 @@ function showLeaderboard() {
   leaderBoard.classList.remove("hide");
   leaderList.innerHTML = "";
 
-  // Rendering the leaderboard
-  fetch(`${API_BASE}/scores`)
-    .then((res) => res.json())
-    .then((data) => {
-      data.forEach((player, index) => {
-        const listItem = document.createElement("li");
-        listItem.textContent = `${index + 1}. ${player.name} - ${player.score}`;
-        leaderList.appendChild(listItem);
-      });
-    })
-    .catch((err) => {
-      console.error("❌ Error fetching leaderboard:", err);
-      window.location.href = "error.html";
-    });
+  // Recupera i punteggi dal localStorage (score.js)
+  const data = getLeaderboard(10); // primi 10
+
+  data.forEach((player, index) => {
+    const listItem = document.createElement("li");
+    listItem.textContent = `${index + 1}. ${player.name} - ${player.score}`;
+    leaderList.appendChild(listItem);
+  });
 }

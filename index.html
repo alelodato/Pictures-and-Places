@@ -1,127 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--SweetAlert-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10" />
-    <!--Google Fonts-->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
-      rel="stylesheet"
-    />
-    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
-    <!--Stylesheets-->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <!--Favicon-->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="assets/favicon/favicon-16x16.png"
-    />
-    <title>Pictures And Places</title>
-  </head>
-  <body>
-    <div class="background-img">
-      <section id="homepage">
-        <div class="title-intro-start">
-          <h1 id="title">PICTURES <br><span>AND</span> PLACES</h1>
-          <div id="intro-text">
-            <div id="intro">
-              <p>Take a look at the pictures and guess the places!</p>
-              <p>How many do you know?</p>
-            </div>
-          </div>
-          <div id="new-game">
-            <button id="new-game-btn">New Game</button>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--SweetAlert-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10" />
+  <!--Google Fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+  <!--Stylesheets-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <!--Favicon-->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
+  <title>Pictures And Places</title>
+</head>
+
+<body>
+  <div class="background-img">
+    <section id="homepage">
+      <div class="title-intro-start">
+        <h1 id="title">PICTURES <br><span>AND</span> PLACES</h1>
+        <div id="intro-text">
+          <div id="intro">
+            <p>Take a look at the pictures and guess the places!</p>
+            <p>How many do you know?</p>
           </div>
         </div>
-        <form id="player-name-form" class="hide">
-          <label for="player-name-input">Player Name:</label>
-          <input
-            type="text"
-            id="player-name-input"
-            name="player-name-input"
-            required
-          />
-          <button type="submit" id="name-submission">Get Results</button>
-        </form>
-        <div id="question-container" class="hide">Question</div>
-        <div id="answers-image">
-          <div id="answer-buttons" class="hide">
-            <button></button>
-            <button></button>
-            <button></button>
-            <button></button>
-          </div>
-          <div id="quiz-image"></div>
+        <div id="new-game">
+          <button id="new-game-btn">New Game</button>
         </div>
-        <!--Info Div-->
-        <div id="info" class="hide"></div>
-        <!--Quiz End Message-->
-        <div id="quiz-end" class="hide">
-          <p></p>
+      </div>
+      <form id="player-name-form" class="hide">
+        <label for="player-name-input">Player Name:</label>
+        <input type="text" id="player-name-input" name="player-name-input" required />
+        <button type="submit" id="name-submission">Get Results</button>
+      </form>
+      <div id="question-container" class="hide">Question</div>
+      <div id="answers-image">
+        <div id="answer-buttons" class="hide">
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
         </div>
-        <!--Leaderboard-->
-        <div class="hide" id="leaderboard">
-          <h1>Leaderboard 👑</h1>
-          <ol type="1" id="board">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ol>
+        <div id="quiz-image"></div>
+      </div>
+      <!--Info Div-->
+      <div id="info" class="hide"></div>
+      <!--Quiz End Message-->
+      <div id="quiz-end" class="hide">
+        <p></p>
+      </div>
+      <!--Leaderboard-->
+      <div class="hide" id="leaderboard">
+        <h1>Leaderboard 👑</h1>
+        <ol type="1" id="board">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ol>
+      </div>
+      <!-- Score Tracker-->
+      <div id="score" class="hide">
+        <p class="scores">Score: <span id="right">0</span></p>
+      </div>
+      <!--Buttons-->
+      <div class="next-restart">
+        <div id="restart-game">
+          <button id="start-again" class="hide">Restart Game</button>
         </div>
-        <!-- Score Tracker-->
-        <div id="score" class="hide">
-          <p class="scores">Score: <span id="right">0</span></p>
+        <div id="next-button">
+          <button id="next" class="hide">Next</button>
         </div>
-        <!--Buttons-->
-        <div class="next-restart">
-          <div id="restart-game">
-            <button id="start-again" class="hide">Restart Game</button>
-          </div>
-          <div id="next-button">
-            <button id="next" class="hide">Next</button>
-          </div>
-          <div id="results-button">
-            <button id="results" class="hide">Finish</button>
-          </div>
+        <div id="results-button">
+          <button id="results" class="hide">Finish</button>
         </div>
-        <div id="restart-button">
-          <button id="restart" class="hide">Play Again</button>
-        </div>
-        <div id="leaderboard-btn">
-          <button class="hide" id="leader-btn">Leaderboard</button>
-        </div>
-      </section>
-      <script src="assets/js/script.js"></script>
-      <script src="assets/js/questions.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.4/dist/sweetalert2.all.min.js"></script>
-      <script src="https://kit.fontawesome.com/d2f8b724df.js" crossorigin="anonymous"></script>
-    </div>
-  </body>
+      </div>
+      <div id="restart-button">
+        <button id="restart" class="hide">Play Again</button>
+      </div>
+      <div id="leaderboard-btn">
+        <button class="hide" id="leader-btn">Leaderboard</button>
+      </div>
+    </section>
+    <script src="score.js"></script>
+    <script src="script.js"></script>
+    <script src="assets/js/questions.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.4/dist/sweetalert2.all.min.js"></script>
+    <script src="https://kit.fontawesome.com/d2f8b724df.js" crossorigin="anonymous"></script>
+  </div>
+</body>
+
 </html>
